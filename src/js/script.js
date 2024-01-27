@@ -98,15 +98,15 @@ const salesTrend = document.getElementById("salesTrend");
 new Chart(salesTrend, {
   type: "bar",
   data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [
       {
         label: "",
-        data: [8000, 16000, 3000, 28000, 9000, 45000, 9000, 20000, 35000, 4000, 30000, 26000],
+        data: [8100, 16000, 5000, 28000, 9000, 45000, 9000, 25000, 20000, 35000, 5000, 40000, 26000],
         backgroundColor: '#cff2e9',
         hoverBackgroundColor: '#34CAA5',
         borderRadius: 20,
-        barPercentage: 0.6,
+        barPercentage: 0.55,
         
         tooltip: {
             callbacks: {
