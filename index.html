@@ -121,7 +121,7 @@
 
             <div class="flex flex-col gap-3">
                 
-                <div class="flex">
+                <div class="flex items-center">
                     <!-- salesTrend box -->
                     <div class="m-4 bg-white rounded-xl w-[60%] p-4 h-[340px]">
                         <div class="flex items-center justify-between p-2 ">
@@ -140,9 +140,9 @@
                     </div>
     
                     <!-- order status boxes -->
-                    <div class="w-[40%] m-4 h-[350px]">
-                        <div class="flex flex-col w-full h-full gap-4">
-                            <div class="flex w-full gap-4">
+                    <div class="w-[40%] mr-4 max-h-[350px]">
+                        <div class="flex flex-col w-full h-full gap-3">
+                            <div class="flex w-full gap-3">
     
                                 <!-- Box 1 -->
                                 <div class="flex-1 w-1/2 p-2 bg-white rounded-xl">
@@ -156,9 +156,9 @@
                                         <p class="text-[#3A3F51] font-semibold text-[24px]">350</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#cff2e9] p-1 rounded-full"><img
+                                        <div class="flex bg-[#cff2e9] p-1 rounded-full gap-1"><img
                                                 src="src/Assets/trending-up.svg" alt="">
-                                            <p class="text-[#34CAA5] font-medium text-[10px]">23.5%</p>
+                                            <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
                                         </div>
                                         <div class="text-[#606060] font-normal text-[15px]">vs. previous month</div>
                                     </div>
@@ -176,9 +176,9 @@
                                         <p class="text-[#3A3F51] font-semibold text-[24px]">270</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#fce8e9] p-[5px] rounded-full"><img
+                                        <div class="flex bg-[#fce8e9] p-1 rounded-full gap-1"><img
                                                 src="src/Assets/trending-up (1).svg" alt="">
-                                            <p class="text-[#ED544E] font-medium text-[10px]">23.5%</p>
+                                            <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
                                         </div>
                                         <div class="text-[#606060] font-normal text-[15px]">vs. previous month</div>
                                     </div>
@@ -200,9 +200,9 @@
                                         <p class="text-[#3A3F51] font-semibold text-[24px]">1567</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#fce8e9] p-[5px] rounded-full"><img
+                                        <div class="flex bg-[#fce8e9] p-1 gap-1 rounded-full"><img
                                                 src="src/Assets/trending-up (1).svg" alt="">
-                                            <p class="text-[#ED544E] font-medium text-[10px]">23.5%</p>
+                                            <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
                                         </div>
                                         <div class="text-[#606060] font-normal text-[15px]">vs. previous month</div>
                                     </div>
@@ -220,9 +220,9 @@
                                         <p class="text-[#3A3F51] font-semibold text-[24px]">$350.000</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#cff2e9] p-1 rounded-full"><img
+                                        <div class="flex bg-[#cff2e9] p-1 gap-1 rounded-full"><img
                                                 src="src/Assets/trending-up.svg" alt="">
-                                            <p class="text-[#34CAA5] font-medium text-[10px]">23.5%</p>
+                                            <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
                                         </div>
                                         <div class="text-[#606060] font-normal text-[15px]">vs. previous month</div>
                                     </div>
@@ -474,14 +474,55 @@
                     <!-- Top platform -->
                     <div class="m-4 bg-white rounded-xl w-[40%] p-4 h-[340px]">
                         <div class="flex items-center justify-between p-2 ">
-                            <div class="text-[#26282C] font-semibold text-[18px] cursor-pointer">Top Platform</div>
-                            <button class="text-[#34CAA5] text-[16px] font-medium">
+                            <div class="text-[#26282C] font-semibold text-[18px]">Top Platform</div>
+                            <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer">
                                 See All
                             </button>
                         </div>
-                        <div>
-                            
+
+                        <!-- progress bars -->
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               Book Bazaar 
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#6160DC] w-[50%] h-[6px] rounded-full" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $2,500,000 
+                                    </div>
+                                    <div>
+                                        +15%
+                                    </div>
+                                </div>
+                            </div>        
                         </div>
+
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               Book Bazaar 
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#6160DC] w-[50%] h-[5px] rounded-full" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $2,500,000 
+                                    </div>
+                                    <div>
+                                        +15%
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                        
                     </div>
                     
                 </div>
