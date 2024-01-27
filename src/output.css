@@ -2163,19 +2163,14 @@ video {
   padding-right: 1rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-1 {
@@ -2198,20 +2193,8 @@ video {
   padding-right: 0.75rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .text-left {
@@ -2437,10 +2420,6 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-\[\#\#34CAA5\] {
-  color: ##34CAA5;
 }
 
 .underline {
