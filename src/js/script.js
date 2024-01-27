@@ -107,6 +107,7 @@ new Chart(salesTrend, {
         hoverBackgroundColor: '#34CAA5',
         borderRadius: 20,
         barPercentage: 0.6,
+        
         tooltip: {
             callbacks: {
               label: function(context) {
@@ -139,7 +140,7 @@ new Chart(salesTrend, {
   // },
   
   options: {
-
+    maintainAspectRatio: false,
     scales: {
       y: {
         max: 50000
