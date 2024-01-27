@@ -235,7 +235,7 @@
 
                 <div class="flex">
                     <!-- Last orders -->
-                    <div class="m-4 bg-white rounded-xl w-[60%] p-4 h-[340px]">
+                    <div class="m-4 bg-white rounded-xl w-[60%] p-4 h-[340px] overflow-y-scroll">
                         <div class="flex items-center justify-between">
                             <div class="text-[#26282C] font-semibold text-[18px]">Last Orders</div>
                             <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer">
@@ -347,7 +347,7 @@
                                 </td>
                             </tr>
 
-                            <tr class="justify-center hidden h-6 border-t">
+                            <tr class="justify-center h-6 border-t">
                                 <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
                                     <img src="src/Assets/Frame 1000003208.svg" alt="">
                                     <div class="font-semibold">Marcus Bergson</div>
@@ -371,8 +371,7 @@
                                 </td>
                             </tr>
 
-                            <div>
-                                <tr class="justify-center hidden h-6 border-t">
+                                <tr class="justify-center h-6 border-t">
                                     <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
                                         <img src="src/Assets/Frame 1000003208.svg" alt="">
                                         <div class="font-semibold">Marcus Bergson</div>
@@ -396,7 +395,7 @@
                                     </td>
                                 </tr>
     
-                                <tr class="justify-center hidden h-6 border-t">
+                                <tr class="justify-center h-6 border-t">
                                     <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
                                         <img src="src/Assets/Frame 1000003208.svg" alt="">
                                         <div class="font-semibold">Marcus Bergson</div>
@@ -420,7 +419,7 @@
                                     </td>
                                 </tr>
     
-                                <tr class="justify-center hidden h-6 border-t">
+                                <tr class="justify-center h-6 border-t">
                                     <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
                                         <img src="src/Assets/Frame 1000003208.svg" alt="">
                                         <div class="font-semibold">Marcus Bergson</div>
@@ -444,7 +443,7 @@
                                     </td>
                                 </tr>
     
-                                <tr class="justify-center hidden h-6 border-t">
+                                <tr class="justify-center h-6 border-t">
                                     <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
                                         <img src="src/Assets/Frame 1000003208.svg" alt="">
                                         <div class="font-semibold">Marcus Bergson</div>
@@ -467,12 +466,11 @@
                                         <div>View</div>
                                     </td>
                                 </tr>
-                            </div>
                         </table>
                     </div>
 
                     <!-- Top platform -->
-                    <div class="m-4 bg-white rounded-xl w-[40%] p-4 h-[340px]">
+                    <div class="m-4 bg-white rounded-xl w-[40%] p-4">
                         <div class="flex items-center justify-between p-2 ">
                             <div class="text-[#26282C] font-semibold text-[18px]">Top Platform</div>
                             <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer">
@@ -481,6 +479,8 @@
                         </div>
 
                         <!-- progress bars -->
+                        
+                        <!-- 1 -->
                         <div class="px-2 mb-2">
                             <div class="text-[#26282C] font-semibold text-[18px]">
                                Book Bazaar 
@@ -501,15 +501,148 @@
                                 </div>
                             </div>        
                         </div>
-
+                        
+                        <!-- 2 -->
                         <div class="px-2 mb-2">
                             <div class="text-[#26282C] font-semibold text-[18px]">
-                               Book Bazaar 
+                               Artisan Aisle 
                             </div>
     
                             <div>
                                 <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                    <div class="bg-[#6160DC] w-[50%] h-[5px] rounded-full" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">  
+                                    <div class="bg-[#54C5EB] w-[40%] h-[6px] rounded-full" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $1,800,000 
+                                    </div>
+                                    <div>
+                                        +10%
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               Toy Troop 
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#FFB74A] w-[30%] h-[6px] rounded-full" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $1,200,000 
+                                    </div>
+                                    <div>
+                                        +8%
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               xStore 
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#FF4A55] w-[30%] h-[6px] rounded-full" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $2,000,000 
+                                    </div>
+                                    <div>
+                                        +10%
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               Tems Clothier 
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#6160DC] w-[50%] h-[6px] rounded-full" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $2,500,000 
+                                    </div>
+                                    <div>
+                                        +15%
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                        
+                        <!-- 6 -->
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               shoprite mart 
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#FF4A55] w-[40%] h-[6px] rounded-full" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $1,500,000 
+                                    </div>
+                                    <div>
+                                        +12%
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               Spar supermart
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#54C5EB] w-[60%] h-[6px] rounded-full" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">  
+                                </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                       $1,400,000 
+                                    </div>
+                                    <div>
+                                        +13%
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="px-2 mb-2">
+                            <div class="text-[#26282C] font-semibold text-[18px]">
+                               Greg's groceries 
+                            </div>
+    
+                            <div>
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#FFB74A] w-[50%] h-[6px] rounded-full" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">  
                                 </div>
                                 </div>
                                 <div class="flex items-center justify-between">

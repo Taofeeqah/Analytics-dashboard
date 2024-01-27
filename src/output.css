@@ -985,6 +985,10 @@ video {
   width: 100%;
 }
 
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2059,6 +2063,21 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#54C5EB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 197 235 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFB74A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 183 74 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FF4A55\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 74 85 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
