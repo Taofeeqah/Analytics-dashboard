@@ -154,3 +154,24 @@ new Chart(salesTrend, {
     },
   },
 });
+
+
+// see all feature
+
+function seeAll() {
+  let remainder = document.getElementById('remainder');
+  let seeAll = document.getElementById('seeAll');
+  let more = document.getElementById('more');
+
+  if (remainder.style.display === 'none') {
+    remainder.style.display = 'block';
+    seeAll.innerHTML = 'See more';
+    more.style.display = 'none'; 
+  } else {
+    remainder.style.display = 'none';
+    seeAll.innerHTML = 'See less';
+    more.style.display = 'block';   
+  }
+}
+
+// document.getElementById('seeMore') = seeAll()
