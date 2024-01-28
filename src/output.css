@@ -776,16 +776,8 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .box-border {
@@ -1023,10 +1015,6 @@ video {
   width: 60%;
 }
 
-.w-\[768px\] {
-  width: 768px;
-}
-
 .w-\[90\%\] {
   width: 90%;
 }
@@ -1051,17 +1039,24 @@ video {
   width: 100vw;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-\[\] {
+  width: ;
 }
 
-.w-auto {
-  width: auto;
+.w-\[600px\] {
+  width: 600px;
 }
 
-.w-\[500px\] {
-  width: 500px;
+.w-\[full\] {
+  width: full;
+}
+
+.w-\[7\] {
+  width: 7;
+}
+
+.w-\[750px\] {
+  width: 750px;
 }
 
 .min-w-5 {
@@ -3195,23 +3190,6 @@ input::-webkit-search-cancel-button {
     width: 100%;
   }
 
-  .lg\:w-\[inh\] {
-    width: inh;
-  }
-
-  .lg\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -3246,14 +3224,6 @@ input::-webkit-search-cancel-button {
 
   .lg\:text-\[24px\] {
     font-size: 24px;
-  }
-
-  .lg\:marker\:w-auto *::marker {
-    width: auto;
-  }
-
-  .lg\:marker\:w-auto::marker {
-    width: auto;
   }
 
   :is(.dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover) {
