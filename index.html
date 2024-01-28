@@ -55,9 +55,7 @@
                             id="dark-toggle">
                             <img src="src/Assets/brightness 1.svg" alt="brightness icon" class="w-[17px] h-[17px]">
                         </button>
-                        <!-- <button class="rounded-full w-[30px] h-[30px] flex items-center justify-center" id="light-toggle">
-                            <img src="src/Assets/moon 1.svg" alt="brightness icon" class="w-[17px] h-[17px]">
-                        </button> -->
+
                     </div>
                 </div>
 
@@ -93,7 +91,7 @@
                                 class="absolute pr-3 ml-3 h-7 w-7 top-2">
 
                             <input type="search" name="search" id="search"
-                                class="bg-white dark:bg-gray-700 rounded-full hidden lg:block outline-none border-[#B7B0B0] border pl-8 p-2"
+                                class="bg-white dark:bg-gray-700 rounded-full outline-none border-[#B7B0B0] border pl-8 p-2"
                                 placeholder="Search...">
                         </div>
 
@@ -106,531 +104,521 @@
                                 <img src="src/Assets/solar_bell-outline.svg" alt="notification" class="p-2 ">
                         </div>
 
+                        <div>
+                            <div
+                                class="flex gap-2 border relative border-[#EBECF2] rounded-full bg-white  dark:bg-gray-700  p-1 cursor-pointer" onclick="toggleBtn()">
+                                <img src="src/Assets/Rectangle 1061.svg" alt="">
+                                <div class="font-normal text-right">
+                                    <p class="text-[#26282C] text-[16px] dark:text-[#F7F8FA]">Justin Bergson</p>
+                                    <p class="text-[#787486] text-[14px] dark:text-[#F7F8FA]">justin@gmail.com</p>
+                                </div>
+                                <img src="src/Assets/Arrow - Down 2.svg" alt="">
+
+
+                            </div>
+                            <div class="absolute bg-white dark:bg-gray-700 w-[150px] p-1 shadow-lg rounded-lg hidden cursor-pointer"
+                                id="options">
+                                <div class="p-2 border-b">
+                                    Signed in as <b>Justin Bergson</b>
+                                </div>
+
+                                <div class="p-2">
+                                    <p>Your Profile</p>
+                                    <p>Help</p>
+                                    <p>Settings</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Header content -->
+
+                <!-- Main content -->
+
+                <div class="flex flex-col gap-3 my-4 lg:my-[2px] w-screen">
+
+                    <!-- header for sm -->
+                    <div class="px-2 lg:hidden">
                         <div
-                            class="flex gap-2 border border-[#EBECF2] rounded-full bg-white  dark:bg-gray-700  p-1 cursor-pointer">
-                            <img src="src/Assets/Rectangle 1061.svg" alt="">
-                            <div class="font-normal text-right">
-                                <p class="text-[#26282C] text-[16px] dark:text-[#F7F8FA]">Justin Bergson</p>
-                                <p class="text-[#787486] text-[14px] dark:text-[#F7F8FA]">justin@gmail.com</p>
-                            </div>
-                            <img src="src/Assets/Arrow - Down 2.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header content -->
+                            class="border-[#EBECF2] dark:border-gray-700 border-b bg-[#F7F8FA] dark:bg-gray-700 p-3 overflow-hidden flex flex-col gap-3">
 
-            <!-- Main content -->
+                            <div class="flex items-center justify-between">
+                                <h1
+                                    class="font-semibold lg:text-[20px] text-[16px] text-[#26282C] leading-7 dark:text-[#F7F8FA]">
+                                    Dashboard</h1>
 
-            <div class="flex flex-col gap-3 my-4 lg:my-[2px] w-screen">
-
-                <div class="flex flex-col-reverse items-center lg:flex-row">
-                    <!-- salesTrend box -->
-                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl lg:w-[60%] p-4 h-[280px] lg:h-[340px] w-[90%]">
-                        <div class="flex items-center justify-between p-2">
-                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#F7F8FA]">
-                                Sales Trends</div>
-                            <div>
-                                <label
-                                    class="text-[#3A3F51] dark:text-[#F7F8FA] lg:text-[14px] text-[11px] font-medium pr-1">Short
-                                    by:</label>
-                                <select name="date" id="date"
-                                    class="outline-none border border-[#B7B0B0] rounded-full cursor-pointer p-1 dark:text-[#F7F8FA] bg-white dark:bg-gray-700">
-                                    <option value="Weekly" selected>Weekly</option>
-                                    <option value="Monthly">Monthly</option>
-                                    <option value="Yearly">Yearly</option>
-                                </select>
-                            </div>
-                        </div>
-                        <canvas id="salesTrend" class="h-[250px] pb-10"></canvas>
-                    </div>
-
-                    <!-- order status boxes -->
-                    <div class="lg:w-[40%] lg:mr-4 lg:max-h-[350px] w-[90%]">
-                        <div class="flex flex-col w-full h-full gap-2 lg:gap-3">
-                            <div class="flex w-full gap-2 lg:gap-3">
-
-                                <!-- Box 1 -->
-                                <div class="flex-1 w-1/2 p-2 bg-white rounded-xl border-[#EBECF2] dark:bg-gray-800">
-                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
-                                        <img src="src/Assets/box-tick.svg" alt=""
-                                            class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
-                                        <img src="src/Assets/Group 3.svg" alt="">
-                                    </div>
-                                    <div class="my-2">
-                                        <p
-                                            class="font-medium text-[#898989] dark:text-[#B7B0B0] lg:text-[18px] text-[15px]">
-                                            Total Order</p>
-                                        <p
-                                            class="text-[#3A3F51] dark:text-[#B7B0B0] font-semibold lg:text-[24px] text-[20px]">
-                                            350</p>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-4">
-                                        <div
-                                            class="flex bg-[#cff2e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1">
-                                            <img src="src/Assets/trending-up.svg" alt="">
-                                            <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
-                                        </div>
-                                        <div
-                                            class="text-[#606060] font-normal dark:text-[#B7B0B0] lg:text-[15px] text-[12px]">
-                                            vs. previous month</div>
-                                    </div>
-                                </div>
-
-                                <!-- Box 2 -->
-                                <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
-                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
-                                        <img src="src/Assets/3d-rotate.svg" alt=""
-                                            class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
-                                        <img src="src/Assets/Group 3 (1).svg" alt="">
-                                    </div>
-                                    <div class="my-2">
-                                        <p
-                                            class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
-                                            Total Refund</p>
-                                        <p
-                                            class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
-                                            270</p>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-4">
-                                        <div
-                                            class="flex bg-[#fce8e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1">
-                                            <img src="src/Assets/trending-up (1).svg" alt="">
-                                            <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
-                                        </div>
-                                        <div
-                                            class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
-                                            vs. previous month</div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="flex w-full gap-4">
-
-                                <!-- Box 3 -->
-                                <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
-                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
-                                        <img src="src/Assets/shopping-cart.svg" alt=""
-                                            class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
-                                        <img src="src/Assets/Group 3 (1).svg" alt="">
-                                    </div>
-                                    <div class="my-2">
-                                        <p
-                                            class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
-                                            Average Sales</p>
-                                        <p
-                                            class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
-                                            1567</p>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-4">
-                                        <div
-                                            class="flex bg-[#fce8e9] px-2 py-1 gap-1 rounded-full overflow-hidden items-center justify-center">
-                                            <img src="src/Assets/trending-up (1).svg" alt="">
-                                            <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
-                                        </div>
-                                        <div
-                                            class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
-                                            vs. previous month</div>
-                                    </div>
-                                </div>
-
-                                <!-- Box 4 -->
-                                <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
-                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
-                                        <img src="src/Assets/coin.svg" alt=""
-                                            class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
-                                        <img src="src/Assets/Group 3.svg" alt="">
-                                    </div>
-                                    <div class="my-2">
-                                        <p
-                                            class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
-                                            Total Income</p>
-                                        <p
-                                            class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
-                                            $350.000</p>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-4">
-                                        <div
-                                            class="flex bg-[#cff2e9] py-1 gap-1 rounded-full overflow-hidden items-center justify-center px-2">
-                                            <img src="src/Assets/trending-up.svg" alt="">
-                                            <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
-                                        </div>
-                                        <div
-                                            class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
-                                            vs. previous month</div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col items-center lg:flex-row">
-                    <!-- Last orders -->
-                    <div
-                        class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] overflow-y-scroll lg:w-[60%] p-4 lg:h-[340px] h-[300px]">
-                        <div class="flex items-center justify-between">
-                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#B7B0B0]">
-                                Last Orders</div>
-                            <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer">
-                                <!-- See All -->
-                            </button>
-                        </div>
-                        <table class="w-full p-2 text-left">
-                            <tr class="text-[#9CA4AB] text-[15px] w-full font-light h-5">
-                                <td>Name</td>
-                                <td class="py-2">Date</td>
-                                <td>Amount</td>
-                                <td>Status</td>
-                                <td>Invoice</td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208.svg" alt="">
-                                    <div class="font-semibold">Marcus Bergson</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 15, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $80,000
-                                </td>
-
-                                <td class="text-[#34CAA5]">
-                                    Paid
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208 (1).svg" alt="">
-                                    <div class="font-semibold">Jaydon Vaccaro</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 15, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $150,000
-                                </td>
-
-                                <td class="text-[#ED544E]">
-                                    Refund
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208 (2).svg" alt="">
-                                    <div class="font-semibold">Corey Schleifer</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 14, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $87,000
-                                </td>
-
-                                <td class="text-[#34CAA5]">
-                                    Paid
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208 (3).svg" alt="">
-                                    <div class="font-semibold">Copper Press</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 15, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $100,000
-                                </td>
-
-                                <td class="text-[#ED544E]">
-                                    Refund
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208 (4).svg" alt="">
-                                    <div class="font-semibold">Phillip Lubin</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 13, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $78,000
-                                </td>
-
-                                <td class="text-[#34CAA5]">
-                                    Paid
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208 (1).svg" alt="">
-                                    <div class="font-semibold">Jaydon Vaccaro</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 15, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $150,000
-                                </td>
-
-                                <td class="text-[#ED544E]">
-                                    Refund
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208 (2).svg" alt="">
-                                    <div class="font-semibold">Corey Schleifer</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 14, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $87,000
-                                </td>
-
-                                <td class="text-[#34CAA5]">
-                                    Paid
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208.svg" alt="">
-                                    <div class="font-semibold">Marcus Bergson</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 15, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $80,000
-                                </td>
-
-                                <td class="text-[#34CAA5]">
-                                    Paid
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-
-                            <tr class="justify-center h-6 border-t">
-                                <td class="flex items-center justify-center float-left gap-1 pt-3 font-light">
-                                    <img src="src/Assets/Frame 1000003208 (3).svg" alt="">
-                                    <div class="font-semibold">Copper Press</div>
-                                </td>
-
-                                <td class="py-4 text-[#9CA4AB]">
-                                    Jan 15, 2024
-                                </td>
-
-                                <td class="font-semibold">
-                                    $100,000
-                                </td>
-
-                                <td class="text-[#ED544E]">
-                                    Refund
-                                </td>
-
-                                <td class="flex items-center justify-center float-left gap-1 pb-1">
-                                    <img src="src/Assets/document-download.svg" alt="">
-                                    <div>View</div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <!-- Top platform -->
-                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] lg:w-[40%] p-3">
-                        <div class="flex items-center justify-between p-2 ">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">Top
-                                Platform</div>
-                            <button
-                                class="text-[#34CAA5] lg:text-[16px] text-[13px] font-medium cursor-pointer p-3 outline-none"
-                                onclick="seeAll()" id="seeAll">
-                                See All
-                            </button>
-                        </div>
-
-                        <!-- progress bars -->
-
-                        <!-- 1 -->
-                        <div class="px-2 mb-2">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                Book Bazaar
-                            </div>
-
-                            <div>
-                                <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                    <div class="bg-[#6160DC] w-[50%] h-[6px] rounded-full" role="progressbar"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        $2,500,000
-                                    </div>
-                                    <div>
-                                        +15%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 2 -->
-                        <div class="px-2 mb-2">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                Artisan Aisle
-                            </div>
-
-                            <div>
-                                <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                    <div class="bg-[#54C5EB] w-[40%] h-[6px] rounded-full" role="progressbar"
-                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        $1,800,000
-                                    </div>
-                                    <div>
-                                        +10%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 3 -->
-                        <div class="px-2 mb-2">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                Toy Troop
-                            </div>
-
-                            <div>
-                                <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                    <div class="bg-[#FFB74A] w-[30%] h-[6px] rounded-full" role="progressbar"
-                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <div>
-                                        $1,200,000
-                                    </div>
-                                    <div>
-                                        +8%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="px-2 mb-2" id="remainder">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                xStore
-                            </div>
-
-                            <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                <div class="bg-[#FF4A55] w-[30%] h-[6px] rounded-full" role="progressbar"
-                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div id="more" class="hidden">
-                            <!-- 4 -->
-                            <div class="px-2 mb-2">
                                 <div
-                                    class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                    xStore
+                                    class="flex gap-2 border border-[#EBECF2] rounded-full bg-white  dark:bg-gray-700  p-1 cursor-pointer items-center">
+                                    <img src="src/Assets/Rectangle 1061.svg" alt="">
+                                    <div class="font-normal text-right">
+                                        <p class="text-[#26282C] lg:text-[16px] text-[12px] dark:text-[#F7F8FA]">Justin
+                                            Bergson</p>
+                                        <p class="text-[#787486] lg:text-[14px] text-[10px] dark:text-[#F7F8FA]">
+                                            justin@gmail.com</p>
+                                    </div>
+                                    <img src="src/Assets/Arrow - Down 2.svg" alt="" class="w-4 h-4">
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-5">
+
+
+                                <div class="relative searchBar">
+                                    <img src="src/Assets/Icon - Search.svg" alt="search icon"
+                                        class="absolute w-6 h-6 pr-3 ml-3 top-2">
+
+                                    <input type="search" name="search" id="search"
+                                        class="bg-white dark:bg-gray-700 rounded-full outline-none border-[#B7B0B0] border pl-7 p-2 w-[100px] text-[13px]"
+                                        placeholder="Search...">
                                 </div>
 
+                                <div class="flex gap-2">
+                                    <div class="flex items-center justify-center gap-1 date">
+                                        <img src="src/Assets/solar_calendar-linear.svg" alt="calender"
+                                            class="min-w-5 min-h-5">
+                                        <p id="fullDate-sm"
+                                            class="text-[#26282C] lg:text-[14px] text-[10px] font-medium dark:text-[#F7F8FA]">
+                                        </p>
+                                    </div>
+
+                                    <div class=" border border-[#EBECF2] rounded-full cursor-pointer bg-white
+                                        dark:bg-gray-700">
+                                        <img src="src/Assets/solar_bell-outline.svg" alt="notification"
+                                            class="p-2 min-w-5 min-h-5">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col-reverse items-center lg:flex-row">
+                        <!-- salesTrend box -->
+                        <div
+                            class="m-4 bg-white dark:bg-gray-800 rounded-xl lg:w-[60%] p-4 h-[280px] lg:h-[340px] w-[90%]">
+                            <div class="flex items-center justify-between p-2">
+                                <div
+                                    class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#F7F8FA]">
+                                    Sales Trends</div>
                                 <div>
-                                    <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                        <div class="bg-[#FF4A55] w-[30%] h-[6px] rounded-full" role="progressbar"
-                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            $2,000,000
-                                        </div>
-                                        <div>
-                                            +10%
-                                        </div>
-                                    </div>
+                                    <label
+                                        class="text-[#3A3F51] dark:text-[#F7F8FA] lg:text-[14px] text-[11px] font-medium pr-1">Short
+                                        by:</label>
+                                    <select name="date" id="date"
+                                        class="outline-none border border-[#B7B0B0] rounded-full cursor-pointer p-1 dark:text-[#F7F8FA] bg-white dark:bg-gray-700">
+                                        <option value="Weekly" selected>Weekly</option>
+                                        <option value="Monthly">Monthly</option>
+                                        <option value="Yearly">Yearly</option>
+                                    </select>
                                 </div>
                             </div>
+                            <canvas id="salesTrend" class="h-[250px] pb-10"></canvas>
+                        </div>
 
-                            <!-- 5 -->
+                        <!-- order status boxes -->
+                        <div class="lg:w-[40%] lg:mr-4 lg:max-h-[350px] w-[90%]">
+                            <div class="flex flex-col w-full h-full gap-2 lg:gap-3">
+                                <div class="flex w-full gap-2 lg:gap-3">
+
+                                    <!-- Box 1 -->
+                                    <div class="flex-1 w-1/2 p-2 bg-white rounded-xl border-[#EBECF2] dark:bg-gray-800">
+                                        <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
+                                            <img src="src/Assets/box-tick.svg" alt=""
+                                                class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
+                                            <img src="src/Assets/Group 3.svg" alt="">
+                                        </div>
+                                        <div class="my-2">
+                                            <p
+                                                class="font-medium text-[#898989] dark:text-[#B7B0B0] lg:text-[18px] text-[15px]">
+                                                Total Order</p>
+                                            <p
+                                                class="text-[#3A3F51] dark:text-[#B7B0B0] font-semibold lg:text-[24px] text-[20px]">
+                                                350</p>
+                                        </div>
+                                        <div class="flex items-center justify-between gap-4">
+                                            <div
+                                                class="flex bg-[#cff2e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1">
+                                                <img src="src/Assets/trending-up.svg" alt="">
+                                                <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
+                                            </div>
+                                            <div
+                                                class="text-[#606060] font-normal dark:text-[#B7B0B0] lg:text-[15px] text-[12px]">
+                                                vs. previous month</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Box 2 -->
+                                    <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
+                                        <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
+                                            <img src="src/Assets/3d-rotate.svg" alt=""
+                                                class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
+                                            <img src="src/Assets/Group 3 (1).svg" alt="">
+                                        </div>
+                                        <div class="my-2">
+                                            <p
+                                                class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
+                                                Total Refund</p>
+                                            <p
+                                                class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
+                                                270</p>
+                                        </div>
+                                        <div class="flex items-center justify-between gap-4">
+                                            <div
+                                                class="flex bg-[#fce8e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1">
+                                                <img src="src/Assets/trending-up (1).svg" alt="">
+                                                <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
+                                            </div>
+                                            <div
+                                                class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
+                                                vs. previous month</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex w-full gap-4">
+
+                                    <!-- Box 3 -->
+                                    <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
+                                        <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
+                                            <img src="src/Assets/shopping-cart.svg" alt=""
+                                                class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
+                                            <img src="src/Assets/Group 3 (1).svg" alt="">
+                                        </div>
+                                        <div class="my-2">
+                                            <p
+                                                class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
+                                                Average Sales</p>
+                                            <p
+                                                class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
+                                                1567</p>
+                                        </div>
+                                        <div class="flex items-center justify-between gap-4">
+                                            <div
+                                                class="flex bg-[#fce8e9] px-2 py-1 gap-1 rounded-full overflow-hidden items-center justify-center">
+                                                <img src="src/Assets/trending-up (1).svg" alt="">
+                                                <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
+                                            </div>
+                                            <div
+                                                class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
+                                                vs. previous month</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Box 4 -->
+                                    <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
+                                        <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
+                                            <img src="src/Assets/coin.svg" alt=""
+                                                class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
+                                            <img src="src/Assets/Group 3.svg" alt="">
+                                        </div>
+                                        <div class="my-2">
+                                            <p
+                                                class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
+                                                Total Income</p>
+                                            <p
+                                                class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
+                                                $350.000</p>
+                                        </div>
+                                        <div class="flex items-center justify-between gap-4">
+                                            <div
+                                                class="flex bg-[#cff2e9] py-1 gap-1 rounded-full overflow-hidden items-center justify-center px-2">
+                                                <img src="src/Assets/trending-up.svg" alt="">
+                                                <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
+                                            </div>
+                                            <div
+                                                class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
+                                                vs. previous month</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center lg:flex-row">
+                        <!-- Last orders -->
+                        <div
+                            class="m-4 bg-white dark:bg-gray-800 rounded-xl overflow-x-scroll overflow-y-scroll w-[90%] lg:w-[60%] p-4 lg:h-[340px] h-[300px]">
+                            <div class="flex items-center justify-between">
+                                <div
+                                    class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#B7B0B0]">
+                                    Last Orders</div>
+                                <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer">
+                                    <!-- See All -->
+                                </button>
+                            </div>
+                            <div class="w-[768px] md:w-full">
+                                <table class="w-full p-2 text-left lg:w-full">
+                                    <tr class="text-[#9CA4AB] lg:text-[15px] text-[11px] w-full font-light h-5">
+                                        <td>Name</td>
+                                        <td class="py-2">Date</td>
+                                        <td>Amount</td>
+                                        <td>Status</td>
+                                        <td>Invoice</td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class="flex items-center justify-center float-left gap-1 pt-3 font-light lg:text-[15px] text-[12px]">
+                                            <img src="src/Assets/Frame 1000003208.svg" alt="">
+                                            <div class="font-semibold">Marcus Bergson</div>
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 15, 2024
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] font-semibold">
+                                            $80,000
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] text-[#34CAA5]">
+                                            Paid
+                                        </td>
+
+                                        <td
+                                            class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class="flex items-center justify-center float-left gap-1 pt-3 font-light lg:text-[15px] text-[12px]">
+                                            <img src="src/Assets/Frame 1000003208 (1).svg" alt="">
+                                            <div class="font-semibold">Jaydon Vaccaro</div>
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 15, 2024
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] font-semibold">
+                                            $150,000
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] text-[#ED544E]">
+                                            Refund
+                                        </td>
+
+                                        <td
+                                            class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class="flex items-center justify-center float-left gap-1 pt-3 lg:text-[15px] text-[12px] font-light">
+                                            <img src="src/Assets/Frame 1000003208 (2).svg" alt="">
+                                            <div class="font-semibold">Corey Schleifer</div>
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 14, 2024
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] font-semibold">
+                                            $87,000
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] text-[#34CAA5]">
+                                            Paid
+                                        </td>
+
+                                        <td
+                                            class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class="flex items-center lg:text-[15px] text-[12px] justify-center float-left gap-1 pt-3 font-light">
+                                            <img src="src/Assets/Frame 1000003208 (3).svg" alt="">
+                                            <div class="font-semibold">Copper Press</div>
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 15, 2024
+                                        </td>
+
+                                        <td class="flg:text-[15px] text-[12px] ont-semibold ">
+                                            $100,000
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] text-[#ED544E]">
+                                            Refund
+                                        </td>
+
+                                        <td
+                                            class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class="flex lg:text-[15px] text-[12px] items-center justify-center float-left gap-1 pt-3 font-light">
+                                            <img src="src/Assets/Frame 1000003208 (4).svg" alt="">
+                                            <div class="font-semibold">Phillip Lubin</div>
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 13, 2024
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] font-semibold">
+                                            $78,000
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] text-[#34CAA5]">
+                                            Paid
+                                        </td>
+
+                                        <td
+                                            class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pt-3 font-light">
+                                            <img src="src/Assets/Frame 1000003208 (1).svg" alt="">
+                                            <div class="font-semibold">Jaydon Vaccaro</div>
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 15, 2024
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] font-semibold">
+                                            $150,000
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] text-[#ED544E]">
+                                            Refund
+                                        </td>
+
+                                        <td
+                                            class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="h-6 border-t ustify-center ">
+                                        <td
+                                            class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pt-3 font-light">
+                                            <img src="src/Assets/Frame 1000003208 (2).svg" alt="">
+                                            <div class="font-semibold">Corey Schleifer</div>
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 14, 2024
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] font-semibold">
+                                            $87,000
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] text-[#34CAA5]">
+                                            Paid
+                                        </td>
+
+                                        <td
+                                            class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pt-3 font-light">
+                                            <img src="src/Assets/Frame 1000003208.svg" alt="">
+                                            <div class="font-semibold">Marcus Bergson</div>
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 15, 2024
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] font-semibold">
+                                            $80,000
+                                        </td>
+
+                                        <td class=" lg:text-[15px] text-[12px] text-[#34CAA5]">
+                                            Paid
+                                        </td>
+
+                                        <td
+                                            class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="justify-center h-6 border-t">
+                                        <td
+                                            class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pt-3 font-light">
+                                            <img src="src/Assets/Frame 1000003208 (3).svg" alt="">
+                                            <div class="font-semibold">Copper Press</div>
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] py-4 text-[#9CA4AB]">
+                                            Jan 15, 2024
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] font-semibold">
+                                            $100,000
+                                        </td>
+
+                                        <td class="lg:text-[15px] text-[12px] text-[#ED544E]">
+                                            Refund
+                                        </td>
+
+                                        <td
+                                            class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                            <img src="src/Assets/document-download.svg" alt="">
+                                            <div>View</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Top platform -->
+                        <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] lg:w-[40%] p-3">
+                            <div class="flex items-center justify-between p-2 ">
+                                <div
+                                    class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                    Top
+                                    Platform</div>
+                                <button
+                                    class="text-[#34CAA5] lg:text-[16px] text-[13px] font-medium cursor-pointer p-3 outline-none"
+                                    onclick="seeAll()" id="seeAll">
+                                    See All
+                                </button>
+                            </div>
+
+                            <!-- progress bars -->
+
+                            <!-- 1 -->
                             <div class="px-2 mb-2">
                                 <div
                                     class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                    Tems Clothier
+                                    Book Bazaar
                                 </div>
 
                                 <div>
@@ -650,162 +638,261 @@
                                 </div>
                             </div>
 
-                            <!-- 6 -->
+                            <!-- 2 -->
                             <div class="px-2 mb-2">
                                 <div
                                     class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                    shoprite mart
+                                    Artisan Aisle
                                 </div>
 
                                 <div>
                                     <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                        <div class="bg-[#FF4A55] w-[40%] h-[6px] rounded-full" role="progressbar"
+                                        <div class="bg-[#54C5EB] w-[40%] h-[6px] rounded-full" role="progressbar"
                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <div>
-                                            $1,500,000
+                                            $1,800,000
                                         </div>
                                         <div>
-                                            +12%
+                                            +10%
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- 7 -->
+                            <!-- 3 -->
                             <div class="px-2 mb-2">
                                 <div
                                     class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                    Spar supermart
+                                    Toy Troop
                                 </div>
 
                                 <div>
                                     <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                        <div class="bg-[#54C5EB] w-[60%] h-[6px] rounded-full" role="progressbar"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="bg-[#FFB74A] w-[30%] h-[6px] rounded-full" role="progressbar"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <div>
-                                            $1,400,000
+                                            $1,200,000
                                         </div>
                                         <div>
-                                            +13%
+                                            +8%
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- 8 -->
-                            <div class="px-2 mb-2">
+                            <div class="px-2 mb-8 lg:mb-2" id="remainder">
                                 <div
                                     class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                    Greg's groceries
+                                    xStore
                                 </div>
 
-                                <div>
-                                    <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                        <div class="bg-[#FFB74A] w-[50%] h-[6px] rounded-full" role="progressbar"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                    <div class="bg-[#FF4A55] w-[30%] h-[6px] rounded-full" role="progressbar"
+                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="more" class="hidden">
+                                <!-- 4 -->
+                                <div class="px-2 mb-2">
+                                    <div
+                                        class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                        xStore
+                                    </div>
+
+                                    <div>
+                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                            <div class="bg-[#FF4A55] w-[30%] h-[6px] rounded-full" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                $2,000,000
+                                            </div>
+                                            <div>
+                                                +10%
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="flex items-center justify-between">
-                                        <div>
-                                            $2,500,000
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="px-2 mb-2">
+                                    <div
+                                        class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                        Tems Clothier
+                                    </div>
+
+                                    <div>
+                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                            <div class="bg-[#6160DC] w-[50%] h-[6px] rounded-full" role="progressbar"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
                                         </div>
-                                        <div>
-                                            +15%
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                $2,500,000
+                                            </div>
+                                            <div>
+                                                +15%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="px-2 mb-2">
+                                    <div
+                                        class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                        shoprite mart
+                                    </div>
+
+                                    <div>
+                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                            <div class="bg-[#FF4A55] w-[40%] h-[6px] rounded-full" role="progressbar"
+                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                $1,500,000
+                                            </div>
+                                            <div>
+                                                +12%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="px-2 mb-2">
+                                    <div
+                                        class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                        Spar supermart
+                                    </div>
+
+                                    <div>
+                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                            <div class="bg-[#54C5EB] w-[60%] h-[6px] rounded-full" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                $1,400,000
+                                            </div>
+                                            <div>
+                                                +13%
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div class="px-2 mb-12 lg:mb-2">
+                                    <div
+                                        class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                        Greg's groceries
+                                    </div>
+
+                                    <div>
+                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                            <div class="bg-[#FFB74A] w-[50%] h-[6px] rounded-full" role="progressbar"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div>
+                                                $2,500,000
+                                            </div>
+                                            <div>
+                                                +15%
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
                         </div>
-
-
-
                     </div>
+                    <!-- End Main content -->
                 </div>
-                <!-- End Main content -->
-            </div>
 
-            <nav class=" bg-[#FFFFFF] dark:bg-gray-700 lg:hidden ">
-                <div
-                    class="bg-[#F7F8FA] dark:bg-gray-700 w-screen flex items-center justify-center flex-row gap-28 p-4 border-[#EBECF2] dark:border-gray-700 border-t">
-                    <!-- upper side icon group -->
-                    <div class="flex items-center justify-center gap-5 px-3">
-                        <img src="src/Assets/Vector.svg" alt="side icon"
-                            class="w-6 h-6 cursor-pointer hover:scale-125 hover:transition hover:duration-200"></a>
-                        <div id="sideIcons" class="flex items-center justify-center gap-5">
-                            <a href="#" class="relative flex items-center justify-center" id="navIcon">
-                                <img src="src/Assets/category.svg" alt="side icon"
-                                    class="w-6 h-6 hover:scale-125 hover:transition hover:duration-200 min-w-5 min-h-5">
-                                <div class="h-[3px] w-[21px] bg-[#0D062D] rounded-b-2xl absolute top-[-28px]"></div>
-                            </a>
-    
-                            <a href="#">
-                                <img src="src/Assets/trend-up.svg" alt="side icon"
-                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
-                            </a>
-                            <a href="#">
-                                <img src="src/Assets/profile-2user.svg" alt="side icon"
-                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
-                            </a>
-                            <a href="#">
-                                <img src="src/Assets/box.svg" alt="side icon"
-                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
-                            </a>
-                            <a href="#">
-                                <img src="src/Assets/discount-shape.svg" alt="side icon"
-                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
-                            </a>
-                            <a href="#">
-                                <img src="src/Assets/info-circle.svg" alt="side icon"
-                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
-                            </a>
-                        </div>
-    
-                        <!-- Dark mode -->
-                        <div class="flex flex-col justify-center gap-2 p-2 bg-white rounded-full dark:bg-gray-500">
-                            <button class="bg-[#34CAA5] rounded-full w-[30px] h-[30px] flex items-center justify-center"
-                                id="dark-toggle-sm">
-                                <img src="src/Assets/brightness 1.svg" alt="brightness icon" class="w-[15px] h-[15px]">
-                            </button>
-                            <!-- <button class="rounded-full w-[30px] h-[30px] flex items-center justify-center" id="light-toggle">
+                <!-- Bottom nav for mobile -->
+                <nav class=" bg-[#FFFFFF] dark:bg-gray-700 lg:hidden fixed bottom-0">
+                    <div
+                        class="bg-[#F7F8FA] dark:bg-gray-700 w-screen flex items-center justify-center flex-row gap-28 p-4 border-[#EBECF2] dark:border-gray-700 border-t">
+                        <!-- upper side icon group -->
+                        <div class="flex items-center justify-center gap-5 px-3">
+                            <img src="src/Assets/Vector.svg" alt="side icon"
+                                class="w-6 h-6 cursor-pointer hover:scale-125 hover:transition hover:duration-200"></a>
+                            <div id="sideIcons" class="flex items-center justify-center gap-5">
+                                <a href="#" class="relative flex items-center justify-center" id="navIcon">
+                                    <img src="src/Assets/category.svg" alt="side icon"
+                                        class="w-6 h-6 hover:scale-125 hover:transition hover:duration-200 min-w-5 min-h-5">
+                                    <div class="h-[3px] w-[21px] bg-[#0D062D] rounded-b-2xl absolute top-[-28px]"></div>
+                                </a>
+
+                                <a href="#">
+                                    <img src="src/Assets/trend-up.svg" alt="side icon"
+                                        class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                                </a>
+                                <a href="#">
+                                    <img src="src/Assets/profile-2user.svg" alt="side icon"
+                                        class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                                </a>
+                                <a href="#">
+                                    <img src="src/Assets/box.svg" alt="side icon"
+                                        class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                                </a>
+                                <a href="#">
+                                    <img src="src/Assets/discount-shape.svg" alt="side icon"
+                                        class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                                </a>
+                                <a href="#">
+                                    <img src="src/Assets/info-circle.svg" alt="side icon"
+                                        class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                                </a>
+                            </div>
+
+                            <!-- Dark mode -->
+                            <div class="flex flex-col justify-center gap-2 p-2 bg-white rounded-full dark:bg-gray-500">
+                                <button
+                                    class="bg-[#34CAA5] rounded-full w-[30px] h-[30px] flex items-center justify-center"
+                                    id="dark-toggle-sm">
+                                    <img src="src/Assets/brightness 1.svg" alt="brightness icon"
+                                        class="w-[15px] h-[15px]">
+                                </button>
+                                <!-- <button class="rounded-full w-[30px] h-[30px] flex items-center justify-center" id="light-toggle">
                                 <img src="src/Assets/moon 1.svg" alt="brightness icon" class="w-[17px] h-[17px]">
                             </button> -->
+                            </div>
                         </div>
+
+
                     </div>
-    
-                    <!-- lower side icon group -->
-                    <!-- <div class="flex gap-[16px] justify-center items-center cursor-pointer">
-                        <a href="#">
-                            <img src="src/Assets/arrow-right.svg" alt="side icon"
-                                class="w-6 h-6 min-w-5 min-h-5 hover:scale-125 hover:transition hover:duration-200 ">
-                        </a>
-                        <a href="#">
-                            <img src="src/Assets/setting-2.svg" alt="side icon"
-                                class="w-6 h-6 min-w-5 min-h-5 hover:scale-125 hover:transition hover:duration-200 ">
-                        </a>
-                        <a href="#">
-                            <img src="src/Assets/logout.svg" alt="side icon"
-                                class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200 ">
-                        </a>
-                    </div> -->
-    
-                </div>
-            </nav>
+                </nav>
+            </div>
+
+
         </div>
 
-        
-    </div>
+        <!-- Chart JS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Chart JS -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- JS -->
-    <script src="src/js/script.js"></script>
+        <!-- JS -->
+        <script src="src/js/script.js"></script>
 </body>
 
 </html>

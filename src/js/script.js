@@ -91,6 +91,15 @@ console.log(fullDate)
 const nowDate = document.querySelector('#fullDate');
 nowDate.innerHTML = fullDate;
 
+const nowDateSm = document.querySelector('#fullDate-sm');
+nowDateSm.innerHTML = fullDate;
+
+
+// Dropdown Menu
+const toggleMenu = document.querySelector('#options')
+function toggleBtn() {
+  toggleMenu.classList.toggle("hidden");
+}
 
 // Chart for sales trend
 const salesTrend = document.getElementById("salesTrend");
@@ -157,11 +166,11 @@ function seeAll() {
 
   if (remainder.style.display === 'none') {
     remainder.style.display = 'block';
-    seeAll.innerHTML = 'See more';
+    seeAll.innerHTML = 'See All';
     more.style.display = 'none'; 
   } else {
     remainder.style.display = 'none';
-    seeAll.innerHTML = 'See less';
+    seeAll.innerHTML = 'See Less';
     more.style.display = 'block';   
   }
 
