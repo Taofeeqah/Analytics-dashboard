@@ -101,6 +101,21 @@ function toggleBtn() {
   toggleMenu.classList.toggle("hidden");
 }
 
+const toggleMenuSm = document.querySelector('#optionsSm')
+function toggleBtnSm() {
+  toggleMenuSm.classList.toggle("hidden");
+}
+
+const toggleBell = document.querySelector('#options-bell')
+function showNotif() {
+  toggleBell.classList.toggle("hidden");
+}
+
+const toggleBellSm = document.querySelector('#options-bellSm')
+function showNotifSm() {
+  toggleBellSm.classList.toggle("hidden");
+}
+
 // Chart for sales trend
 const salesTrend = document.getElementById("salesTrend");
 

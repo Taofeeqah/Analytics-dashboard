@@ -2,13 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-#search::-webkit-search-cancel-button {
+input::-webkit-search-cancel-button {
     position: relative;
     right: 5px;
     cursor: pointer;
     filter: invert(0.5);
 }
-
-/* #more {
-    display: none;
-} */
