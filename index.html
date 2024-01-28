@@ -122,15 +122,15 @@
 
             <!-- Main content -->
 
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-3 my-4 lg:my-[2px]">
 
                 <div class="flex flex-col-reverse items-center lg:flex-row">
                     <!-- salesTrend box -->
-                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl lg:w-[60%] p-4 h-[340px] w-[90%] overflow-x-scroll">
+                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl lg:w-[60%] p-4 h-[280px] lg:h-[340px] w-[90%]">
                         <div class="flex items-center justify-between p-2">
-                            <div class="text-[#26282C] font-semibold text-[18px] dark:text-[#F7F8FA]">Sales Trends</div>
+                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#F7F8FA]">Sales Trends</div>
                             <div>
-                                <label class="text-[#3A3F51] dark:text-[#F7F8FA] text-[14px] font-medium pr-1">Short by:</label>
+                                <label class="text-[#3A3F51] dark:text-[#F7F8FA] lg:text-[14px] text-[11px] font-medium pr-1">Short by:</label>
                                 <select name="date" id="date"
                                     class="outline-none border border-[#B7B0B0] rounded-full cursor-pointer p-1 dark:text-[#F7F8FA] bg-white dark:bg-gray-700">
                                     <option value="Weekly" selected>Weekly</option>
@@ -143,47 +143,47 @@
                     </div>
 
                     <!-- order status boxes -->
-                    <div class="lg:w-[40%] lg:mr-4 lg:max-h-[350px] overflow-x-scroll w-[90%]">
+                    <div class="lg:w-[40%] lg:mr-4 lg:max-h-[350px] w-[90%]">
                         <div class="flex flex-col w-full h-full gap-2 lg:gap-3">
                             <div class="flex w-full gap-2 lg:gap-3">
 
                                 <!-- Box 1 -->
                                 <div class="flex-1 w-1/2 p-2 bg-white rounded-xl border-[#EBECF2] dark:bg-gray-800">
-                                    <div class="flex items-center justify-between gap-2">
+                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
                                         <img src="src/Assets/box-tick.svg" alt=""
                                             class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
                                         <img src="src/Assets/Group 3.svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] dark:text-[#B7B0B0] text-[18px]">Total Order</p>
-                                        <p class="text-[#3A3F51] dark:text-[#B7B0B0] font-semibold text-[24px]">350</p>
+                                        <p class="font-medium text-[#898989] dark:text-[#B7B0B0] lg:text-[18px] text-[15px]">Total Order</p>
+                                        <p class="text-[#3A3F51] dark:text-[#B7B0B0] font-semibold lg:text-[24px] text-[20px]">350</p>
                                     </div>
-                                    <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#cff2e9] p-1 rounded-full gap-1"><img
+                                    <div class="flex items-center justify-between gap-4">
+                                        <div class="flex bg-[#cff2e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1"><img
                                                 src="src/Assets/trending-up.svg" alt="">
                                             <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal dark:text-[#B7B0B0] text-[15px]">vs. previous month</div>
+                                        <div class="text-[#606060] font-normal dark:text-[#B7B0B0] lg:text-[15px] text-[12px]">vs. previous month</div>
                                     </div>
                                 </div>
 
                                 <!-- Box 2 -->
                                 <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
-                                    <div class="flex items-center justify-between gap-2">
+                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
                                         <img src="src/Assets/3d-rotate.svg" alt=""
                                             class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
                                         <img src="src/Assets/Group 3 (1).svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] text-[18px] dark:text-[#B7B0B0]">Total Refund</p>
-                                        <p class="text-[#3A3F51] font-semibold text-[24px] dark:text-[#B7B0B0]">270</p>
+                                        <p class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">Total Refund</p>
+                                        <p class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">270</p>
                                     </div>
-                                    <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#fce8e9] p-1 rounded-full gap-1"><img
+                                    <div class="flex items-center justify-between gap-4">
+                                        <div class="flex bg-[#fce8e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1"><img
                                                 src="src/Assets/trending-up (1).svg" alt="">
                                             <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal text-[15px] dark:text-[#B7B0B0]">vs. previous month</div>
+                                        <div class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">vs. previous month</div>
                                     </div>
                                 </div>
 
@@ -193,41 +193,41 @@
 
                                 <!-- Box 3 -->
                                 <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
-                                    <div class="flex items-center justify-between gap-2">
+                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
                                         <img src="src/Assets/shopping-cart.svg" alt=""
                                             class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
                                         <img src="src/Assets/Group 3 (1).svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] lg:text-[18px] text-12 dark:text-[#B7B0B0]">Average Sales</p>
-                                        <p class="text-[#3A3F51] font-semibold text-[24px] dark:text-[#B7B0B0]">1567</p>
+                                        <p class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">Average Sales</p>
+                                        <p class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">1567</p>
                                     </div>
-                                    <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#fce8e9] p-1 gap-1 rounded-full"><img
+                                    <div class="flex items-center justify-between gap-4">
+                                        <div class="flex bg-[#fce8e9] px-2 py-1 gap-1 rounded-full overflow-hidden items-center justify-center"><img
                                                 src="src/Assets/trending-up (1).svg" alt="">
                                             <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal text-[15px] dark:text-[#B7B0B0]">vs. previous month</div>
+                                        <div class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">vs. previous month</div>
                                     </div>
                                 </div>
 
                                 <!-- Box 4 -->
                                 <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
-                                    <div class="flex items-center justify-between gap-2">
+                                    <div class="flex flex-col items-center justify-between gap-2 lg:flex-row">
                                         <img src="src/Assets/coin.svg" alt=""
                                             class="border border-[#B7B0B0] rounded-full cursor-pointer p-2">
                                         <img src="src/Assets/Group 3.svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] text-[18px] dark:text-[#B7B0B0]">Total Income</p>
-                                        <p class="text-[#3A3F51] font-semibold text-[24px] dark:text-[#B7B0B0]">$350.000</p>
+                                        <p class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">Total Income</p>
+                                        <p class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">$350.000</p>
                                     </div>
-                                    <div class="flex items-center justify-between gap-2">
-                                        <div class="flex bg-[#cff2e9] p-1 gap-1 rounded-full"><img
+                                    <div class="flex items-center justify-between gap-4">
+                                        <div class="flex bg-[#cff2e9] py-1 gap-1 rounded-full overflow-hidden items-center justify-center px-2"><img
                                                 src="src/Assets/trending-up.svg" alt="">
                                             <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal text-[15px] dark:text-[#B7B0B0]">vs. previous month</div>
+                                        <div class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">vs. previous month</div>
                                     </div>
                                 </div>
 
@@ -238,9 +238,9 @@
 
                 <div class="flex flex-col lg:flex-row">
                     <!-- Last orders -->
-                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[85%] overflow-x-scroll lg:w-[60%] p-4 h-[340px] overflow-y-scroll">
+                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] overflow-y-scroll lg:w-[60%] p-4 h-[340px]">
                         <div class="flex items-center justify-between">
-                            <div class="text-[#26282C] font-semibold text-[18px] dark:text-[#B7B0B0]">Last Orders</div>
+                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#B7B0B0]">Last Orders</div>
                             <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer">
                                 <!-- See All -->
                             </button>
@@ -473,10 +473,10 @@
                     </div>
 
                     <!-- Top platform -->
-                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[85%] overflow-x-scroll lg:w-[40%] p-3">
+                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] lg:w-[40%] p-3">
                         <div class="flex items-center justify-between p-2 ">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">Top Platform</div>
-                            <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer p-3 outline-none" onclick="seeAll()"
+                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">Top Platform</div>
+                            <button class="text-[#34CAA5] lg:text-[16px] text-[13px] font-medium cursor-pointer p-3 outline-none" onclick="seeAll()"
                                 id="seeAll">
                                 See All
                             </button>
@@ -486,7 +486,7 @@
 
                         <!-- 1 -->
                         <div class="px-2 mb-2">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                 Book Bazaar
                             </div>
 
@@ -509,7 +509,7 @@
 
                         <!-- 2 -->
                         <div class="px-2 mb-2">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                 Artisan Aisle
                             </div>
 
@@ -532,7 +532,7 @@
 
                         <!-- 3 -->
                         <div class="px-2 mb-2">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                 Toy Troop
                             </div>
 
@@ -554,7 +554,7 @@
                         </div>
 
                         <div class="px-2 mb-2" id="remainder">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                 xStore
                             </div>
 
@@ -569,7 +569,7 @@
                             <div id="more" class="hidden">
                                 <!-- 4 -->
                                 <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                         xStore
                                     </div>
 
@@ -592,7 +592,7 @@
 
                                 <!-- 5 -->
                                 <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                         Tems Clothier
                                     </div>
 
@@ -615,7 +615,7 @@
 
                                 <!-- 6 -->
                                 <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                         shoprite mart
                                     </div>
 
@@ -638,7 +638,7 @@
 
                                 <!-- 7 -->
                                 <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                         Spar supermart
                                     </div>
 
@@ -661,7 +661,7 @@
 
                                 <!-- 8 -->
                                 <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold text-[18px]">
+                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
                                         Greg's groceries
                                     </div>
 
