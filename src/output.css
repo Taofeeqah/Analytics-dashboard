@@ -572,13 +572,13 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1115px) {
   .\!container {
-    max-width: 1024px !important;
+    max-width: 1115px !important;
   }
 
   .container {
-    max-width: 1024px;
+    max-width: 1115px;
   }
 }
 
@@ -975,6 +975,34 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[85\] {
+  width: 85;
+}
+
+.w-\[85\%\] {
+  width: 85%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[\%\] {
+  width: %;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[95\%\] {
+  width: 95%;
 }
 
 .flex-1 {
@@ -2821,9 +2849,9 @@ video {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1115px) {
     .sm\:container {
-      max-width: 1024px;
+      max-width: 1115px;
     }
   }
 
@@ -2889,16 +2917,92 @@ video {
   text-align: center;
 }
 
+:is(.dark .dark\:border-gray-700) {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:bg-gray-500) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-gray-700) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-gray-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:text-\[\#B7B0B0\]) {
+  --tw-text-opacity: 1;
+  color: rgb(183 176 176 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-\[\#F7F8FA\]) {
+  --tw-text-opacity: 1;
+  color: rgb(247 248 250 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  @media (min-width: 1024px) {
-    .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
-      paint-order: markers;
-    }
+@media (min-width: 1115px) {
+  .lg\:mr-4 {
+    margin-right: 1rem;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:h-\[340px\] {
+    height: 340px;
+  }
+
+  .lg\:max-h-\[350px\] {
+    max-height: 350px;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .lg\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .lg\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  :is(.dark .dark\:lg\:hover\:\[paint-order\:markers\]:hover) {
+    paint-order: markers;
   }
 }

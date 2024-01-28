@@ -131,13 +131,6 @@ new Chart(salesTrend, {
     
   },
 
-  // tooltip  : {
-  //   callbacks: {
-  //     label: function(tooltipItem) {
-  //       return "$" + Number(tooltipItem.yLabel);
-  //     }
-  //   }
-  // },
   
   options: {
     maintainAspectRatio: false,
@@ -156,8 +149,7 @@ new Chart(salesTrend, {
 });
 
 
-// see all feature
-
+// see all/ see less function
 function seeAll() {
   let remainder = document.getElementById('remainder');
   let seeAll = document.getElementById('seeAll');
@@ -172,6 +164,15 @@ function seeAll() {
     seeAll.innerHTML = 'See less';
     more.style.display = 'block';   
   }
+
 }
 
-// document.getElementById('seeMore') = seeAll()
+
+(function() {
+  const darkToggle = document.querySelector('#dark-toggle');
+
+  darkToggle.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.documentElement.classList.toggle('dark');
+  })
+}) ();

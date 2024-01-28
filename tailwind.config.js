@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./**/*.{html,js}", "./src/**/*.{js,html}"],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class', // or 'class'
   theme: {
     accentColor: ({ theme }) => ({
       ...theme('colors'),
@@ -816,7 +816,7 @@ module.exports = {
     screens: {
       sm: '640px',
       md: '768px',
-      lg: '1024px',
+      lg: '1115px',
       xl: '1280px',
       '2xl': '1536px',
     },
