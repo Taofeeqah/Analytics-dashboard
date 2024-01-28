@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/Assets/Vector.svg" type="image/x-icon">
     <link href="./src/output.css" rel="stylesheet">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <title>Analytics dashboard</title>
 
 </head>
@@ -156,10 +157,10 @@
 
         <!-- Main content -->
 
-        <div class="flex flex-col gap-3 my-4 lg:my-[2px] w-screen">
+        <div class="flex flex-col gap-3 my-4 lg:my-[2px]">
 
             <!-- header for sm -->
-            <div class="px-2 lg:hidden">
+            <div class="w-screen px-2 lg:hidden">
                 <div
                     class="border-[#EBECF2] dark:border-gray-700 border-b bg-[#F7F8FA] dark:bg-gray-700 p-3 overflow-hidden flex flex-col gap-3">
 
@@ -388,7 +389,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col items-center lg:items-start lg:flex-row">
                 <!-- Last orders -->
                 <div
                     class="m-4 bg-white dark:bg-gray-800 rounded-xl overflow-x-scroll overflow-y-scroll w-[90%] lg:w-[60%] p-4 lg:h-[340px] h-[300px]">
@@ -399,7 +400,7 @@
                             <!-- See All -->
                         </button>
                     </div>
-                    <div class="w-[768px] md:w-full">
+                    <div class="">
                         <table class="w-full p-2 text-left lg:w-full">
                             <tr class="text-[#9CA4AB] lg:text-[15px] text-[11px] w-full font-light h-5">
                                 <td>Name</td>
@@ -429,7 +430,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -455,7 +456,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -481,7 +482,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -507,7 +508,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -533,7 +534,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -559,7 +560,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -585,7 +586,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -611,7 +612,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -637,7 +638,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()" onmousedown="keyDown()" onmouseout="mouseLeave()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -866,23 +867,7 @@
             </div>
             <!-- End Main content -->
         </div>
-
-        <div class="w-[300px] flex flex-col gap-6 p-3" id="invoice">
-            <div class="flex items-center justify-between gap-5">
-                <div class="font-bold text-[25px]">
-                    Invoice
-                </div>
-    
-                <div class="text-[12px]">
-                    <p>Invoice No. 12345</p>
-                    <p id="fullDatePdf"></p>
-                </div>
-            </div>
-    
-            <div>
-                Thank you for your patronage, we hope to see you soon!
-            </div>
-        </div> 
+            
 
         <!-- Bottom nav for mobile -->
         <nav class=" bg-[#FFFFFF] dark:bg-gray-700 lg:hidden fixed bottom-0">
@@ -936,6 +921,146 @@
 
             </div>
         </nav>
+        
+            <div id="invoice" class="hidden">
+                <div class="flex items-center justify-between p-7">
+                    <div class="font-semibold text-[25px]">
+                        INVOICE
+                    </div> 
+                    <div class="text-sm font-light"> 
+                        
+                     <p class="text-sm font-norma">
+                      Invoice Detail:
+                     </p>
+                     <p>Unwrapped</p>
+                     <p>Fake Street 123</p>
+                     <p>San Javier</p>
+                     <p>CA 1234</p>
+                     <small id="fullDatePdf"></small>
+                    </div>
+                </div> 
+        
+                <div class="px-7">
+                    <div class="flex flex-col mx-0 mt-5">
+                     <table class="min-w-full divide-y divide-slate-500">
+                      <thead>
+                       <tr>
+                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-normal sm:pl-6 md:pl-0">
+                         Description
+                        </th>
+                        <th scope="col" class="hidden py-3.5 px-3 text-right text-sm font-normal sm:table-cell">
+                         Quantity
+                        </th>
+                        <th scope="col" class="hidden py-3.5 px-3 text-right text-sm font-normal sm:table-cell">
+                         Rate
+                        </th>
+                        <th scope="col" class="py-3.5 pl-3 pr-4 text-right text-sm font-normal sm:pr-6 md:pr-0">
+                         Amount
+                        </th>
+                       </tr>
+                      </thead>
+                      <tbody>
+                       <tr class="border-b border-slate-200">
+                        <td class="py-4 pl-4 pr-3 text-sm sm:pl-6 md:pl-0">
+                         <div class="font-medium">item 1</div>
+                         <div class="mt-0.5 sm:hidden">
+                          1 unit at $0.00
+                         </div>
+                        </td>
+                        <td class="hidden px-3 py-4 text-sm text-right sm:table-cell">
+                         48
+                        </td>
+                        <td class="hidden px-3 py-4 text-sm text-right sm:table-cell">
+                         $0.00
+                        </td>
+                        <td class="py-4 pl-3 pr-4 text-sm text-right sm:pr-6 md:pr-0">
+                         $0.00
+                        </td>
+                       </tr>
+                       <tr class="border-b border-slate-200">
+                        <td class="py-4 pl-4 pr-3 text-sm sm:pl-6 md:pl-0">
+                         <div class="font-medium ">
+                          Item 2
+                         </div>
+                         <div class="mt-0.5  sm:hidden">
+                          1 unit at $75.00
+                         </div>
+                        </td>
+                        <td class="hidden px-3 py-4 text-sm text-right sm:table-cell">
+                         4
+                        </td>
+                        <td class="hidden px-3 py-4 text-sm text-right sm:table-cell">
+                         $0.00
+                        </td>
+                        <td class="py-4 pl-3 pr-4 text-sm text-right sm:pr-6 md:pr-0">
+                         $0.00
+                        </td>
+                       </tr>
+               
+                      </tbody>
+                      <tfoot>
+                       <tr>
+                        <th scope="row" colspan="3" class="hidden pt-6 pl-6 pr-3 text-sm font-light text-right sm:table-cell md:pl-0">
+                         Subtotal
+                        </th>
+                        <th scope="row" class="pt-6 pl-4 pr-3 text-sm font-light text-left sm:hidden">
+                         Subtotal
+                        </th>
+                        <td class="pt-6 pl-3 pr-4 text-sm text-right sm:pr-6 md:pr-0">
+                         $0.00
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row" colspan="3" class="hidden pt-6 pl-6 pr-3 text-sm font-light text-right sm:table-cell md:pl-0">
+                         Discount
+                        </th>
+                        <th scope="row" class="pt-6 pl-4 pr-3 text-sm font-light text-left sm:hidden">
+                         Discount
+                        </th>
+                        <td class="pt-6 pl-3 pr-4 text-sm text-right sm:pr-6 md:pr-0">
+                         $0.00
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row" colspan="3" class="hidden pt-4 pl-6 pr-3 text-sm font-light text-right sm:table-cell md:pl-0">
+                         Tax
+                        </th>
+                        <th scope="row" class="pt-4 pl-4 pr-3 text-sm font-light text-left sm:hidden">
+                         Tax
+                        </th>
+                        <td class="pt-4 pl-3 pr-4 text-sm text-right sm:pr-6 md:pr-0">
+                         $0.00
+                        </td>
+                       </tr>
+                       <tr>
+                        <th scope="row" colspan="3" class="hidden pt-4 pl-6 pr-3 text-sm font-normal text-right text-slate-700 sm:table-cell md:pl-0">
+                         Total
+                        </th>
+                        <th scope="row" class="pt-4 pl-4 pr-3 text-sm font-normal text-left text-slate-700 sm:hidden">
+                         Total
+                        </th>
+                        <td class="pt-4 pl-3 pr-4 text-sm font-normal text-right text-slate-700 sm:pr-6 md:pr-0">
+                         $0.00
+                        </td>
+                       </tr>
+                      </tfoot>
+                     </table>
+                    </div>
+                   </div>
+        
+                   <div class="mt-3 p-9">
+                    <div class="border-t pt-9 border-slate-200">
+                     <div class="text-sm font-light text-slate-700">
+                      <p>
+                       Payment terms are 14 days. Please be aware that according to the
+                       Late Payment of Unwrapped Debts Act 0000, freelancers are
+                       entitled to claim a 00.00 late fee upon non-payment of debts
+                       after this time.
+                      </p>
+                     </div>
+                    </div>
+                   </div>
+            </div>
     </div>
 
 

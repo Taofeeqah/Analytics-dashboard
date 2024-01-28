@@ -214,6 +214,23 @@ function seeAll() {
 }) ();
 
 
+function keyDown() {
+  const element = document.getElementById('invoice');
+  element.style.display = 'block';
+}
+
+function mouseLeave() {
+  const element = document.getElementById('invoice');
+  element.style.display = 'none';
+}
 // Generate PDF
 
-function
+function generatePdf() {
+  const element = document.getElementById('invoice');
+
+  html2pdf()
+  .from(element)
+  .save('invoice.pdf');
+}
+
+
