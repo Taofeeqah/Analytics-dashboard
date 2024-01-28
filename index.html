@@ -388,7 +388,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col items-center lg:flex-row">
+            <div class="flex flex-col lg:flex-row">
                 <!-- Last orders -->
                 <div
                     class="m-4 bg-white dark:bg-gray-800 rounded-xl overflow-x-scroll overflow-y-scroll w-[90%] lg:w-[60%] p-4 lg:h-[340px] h-[300px]">
@@ -429,7 +429,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -455,7 +455,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -481,7 +481,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -507,7 +507,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -533,7 +533,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -559,7 +559,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -585,7 +585,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -611,7 +611,7 @@
                                 </td>
 
                                 <td
-                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class=" lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -637,7 +637,7 @@
                                 </td>
 
                                 <td
-                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1">
+                                    class="lg:text-[15px] text-[12px] flex items-center justify-center float-left gap-1 pb-1 cursor-pointer" onclick="generatePdf()">
                                     <img src="src/Assets/document-download.svg" alt="">
                                     <div>View</div>
                                 </td>
@@ -867,6 +867,23 @@
             <!-- End Main content -->
         </div>
 
+        <div class="w-[300px] flex flex-col gap-6 p-3" id="invoice">
+            <div class="flex items-center justify-between gap-5">
+                <div class="font-bold text-[25px]">
+                    Invoice
+                </div>
+    
+                <div class="text-[12px]">
+                    <p>Invoice No. 12345</p>
+                    <p id="fullDatePdf"></p>
+                </div>
+            </div>
+    
+            <div>
+                Thank you for your patronage, we hope to see you soon!
+            </div>
+        </div> 
+
         <!-- Bottom nav for mobile -->
         <nav class=" bg-[#FFFFFF] dark:bg-gray-700 lg:hidden fixed bottom-0">
             <div
@@ -920,6 +937,7 @@
             </div>
         </nav>
     </div>
+
 
 
     </div>

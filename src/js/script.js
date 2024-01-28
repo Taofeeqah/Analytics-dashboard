@@ -94,6 +94,9 @@ nowDate.innerHTML = fullDate;
 const nowDateSm = document.querySelector('#fullDate-sm');
 nowDateSm.innerHTML = fullDate;
 
+const pdfDate = document.querySelector('#fullDatePdf');
+pdfDate.innerHTML = fullDate;
+
 
 // Dropdown Menu
 const toggleMenu = document.querySelector('#options')
@@ -209,3 +212,8 @@ function seeAll() {
     document.documentElement.classList.toggle('dark');
   })
 }) ();
+
+
+// Generate PDF
+
+function
