@@ -106,7 +106,7 @@ new Chart(salesTrend, {
         backgroundColor: '#cff2e9',
         hoverBackgroundColor: '#34CAA5',
         borderRadius: 20,
-        barPercentage: 0.55,
+        barPercentage: 0.5,
         
         tooltip: {
             callbacks: {
@@ -170,6 +170,15 @@ function seeAll() {
 
 (function() {
   const darkToggle = document.querySelector('#dark-toggle');
+
+  darkToggle.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.documentElement.classList.toggle('dark');
+  })
+}) ();
+
+(function() {
+  const darkToggle = document.querySelector('#dark-toggle-sm');
 
   darkToggle.addEventListener('click', (event) => {
     event.preventDefault();

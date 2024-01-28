@@ -7,14 +7,15 @@
     <link rel="shortcut icon" href="./src/Assets/Vector.svg" type="image/x-icon">
     <link href="./src/output.css" rel="stylesheet">
     <title>Analytics dashboard</title>
-    
+
 </head>
 
-<body class="bg-[#F7F8FA] dark:bg-gray-700 dark:text-[#F7F8FA] w-screen">
+<body class="bg-[#F7F8FA] dark:bg-gray-700 dark:text-[#F7F8FA] h-screen">
     <div class="flex">
         <!-- Side nav -->
-        <nav class="h-screen bg-[#FFFFFF] dark:bg-gray-700 hidden lg:block">
-            <div class="bg-[#F7F8FA] dark:bg-gray-700  flex flex-col gap-28 py-4 border-[#EBECF2] dark:border-gray-700 border-r">
+        <nav class="h-full bg-[#FFFFFF] hidden dark:bg-gray-700 lg:block">
+            <div
+                class="bg-[#F7F8FA] dark:bg-gray-700  flex flex-col gap-28 py-4 border-[#EBECF2] dark:border-gray-700 border-r">
                 <!-- upper side icon group -->
                 <div class="flex flex-col items-center justify-center gap-5 px-3">
                     <img src="src/Assets/Vector.svg" alt="side icon"
@@ -50,7 +51,8 @@
 
                     <!-- Dark mode -->
                     <div class="flex flex-col justify-center gap-2 p-2 bg-white rounded-full dark:bg-gray-500">
-                        <button class="bg-[#34CAA5] rounded-full w-[30px] h-[30px] flex items-center justify-center" id="dark-toggle">
+                        <button class="bg-[#34CAA5] rounded-full w-[30px] h-[30px] flex items-center justify-center"
+                            id="dark-toggle">
                             <img src="src/Assets/brightness 1.svg" alt="brightness icon" class="w-[17px] h-[17px]">
                         </button>
                         <!-- <button class="rounded-full w-[30px] h-[30px] flex items-center justify-center" id="light-toggle">
@@ -76,9 +78,6 @@
                 </div>
 
             </div>
-
-            <div class="bg-[#FFFFFF]">
-            </div>
         </nav>
         <!-- End side nav -->
 
@@ -103,11 +102,12 @@
                             <p id="fullDate" class="text-[#26282C] text-[14px] font-medium dark:text-[#F7F8FA]""></p>
                         </div>
 
-                        <div class="border border-[#EBECF2] rounded-full cursor-pointer bg-white dark:bg-gray-700">
-                            <img src="src/Assets/solar_bell-outline.svg" alt="notification" class="p-2 ">
+                        <div class=" border border-[#EBECF2] rounded-full cursor-pointer bg-white dark:bg-gray-700">
+                                <img src="src/Assets/solar_bell-outline.svg" alt="notification" class="p-2 ">
                         </div>
 
-                        <div class="flex gap-2 border border-[#EBECF2] rounded-full bg-white  dark:bg-gray-700  p-1 cursor-pointer">
+                        <div
+                            class="flex gap-2 border border-[#EBECF2] rounded-full bg-white  dark:bg-gray-700  p-1 cursor-pointer">
                             <img src="src/Assets/Rectangle 1061.svg" alt="">
                             <div class="font-normal text-right">
                                 <p class="text-[#26282C] text-[16px] dark:text-[#F7F8FA]">Justin Bergson</p>
@@ -122,15 +122,18 @@
 
             <!-- Main content -->
 
-            <div class="flex flex-col gap-3 my-4 lg:my-[2px]">
+            <div class="flex flex-col gap-3 my-4 lg:my-[2px] w-screen">
 
                 <div class="flex flex-col-reverse items-center lg:flex-row">
                     <!-- salesTrend box -->
                     <div class="m-4 bg-white dark:bg-gray-800 rounded-xl lg:w-[60%] p-4 h-[280px] lg:h-[340px] w-[90%]">
                         <div class="flex items-center justify-between p-2">
-                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#F7F8FA]">Sales Trends</div>
+                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#F7F8FA]">
+                                Sales Trends</div>
                             <div>
-                                <label class="text-[#3A3F51] dark:text-[#F7F8FA] lg:text-[14px] text-[11px] font-medium pr-1">Short by:</label>
+                                <label
+                                    class="text-[#3A3F51] dark:text-[#F7F8FA] lg:text-[14px] text-[11px] font-medium pr-1">Short
+                                    by:</label>
                                 <select name="date" id="date"
                                     class="outline-none border border-[#B7B0B0] rounded-full cursor-pointer p-1 dark:text-[#F7F8FA] bg-white dark:bg-gray-700">
                                     <option value="Weekly" selected>Weekly</option>
@@ -155,15 +158,22 @@
                                         <img src="src/Assets/Group 3.svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] dark:text-[#B7B0B0] lg:text-[18px] text-[15px]">Total Order</p>
-                                        <p class="text-[#3A3F51] dark:text-[#B7B0B0] font-semibold lg:text-[24px] text-[20px]">350</p>
+                                        <p
+                                            class="font-medium text-[#898989] dark:text-[#B7B0B0] lg:text-[18px] text-[15px]">
+                                            Total Order</p>
+                                        <p
+                                            class="text-[#3A3F51] dark:text-[#B7B0B0] font-semibold lg:text-[24px] text-[20px]">
+                                            350</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-4">
-                                        <div class="flex bg-[#cff2e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1"><img
-                                                src="src/Assets/trending-up.svg" alt="">
+                                        <div
+                                            class="flex bg-[#cff2e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1">
+                                            <img src="src/Assets/trending-up.svg" alt="">
                                             <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal dark:text-[#B7B0B0] lg:text-[15px] text-[12px]">vs. previous month</div>
+                                        <div
+                                            class="text-[#606060] font-normal dark:text-[#B7B0B0] lg:text-[15px] text-[12px]">
+                                            vs. previous month</div>
                                     </div>
                                 </div>
 
@@ -175,15 +185,22 @@
                                         <img src="src/Assets/Group 3 (1).svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">Total Refund</p>
-                                        <p class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">270</p>
+                                        <p
+                                            class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
+                                            Total Refund</p>
+                                        <p
+                                            class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
+                                            270</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-4">
-                                        <div class="flex bg-[#fce8e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1"><img
-                                                src="src/Assets/trending-up (1).svg" alt="">
+                                        <div
+                                            class="flex bg-[#fce8e9] py-1 overflow-hidden items-center justify-center px-2 rounded-full gap-1">
+                                            <img src="src/Assets/trending-up (1).svg" alt="">
                                             <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">vs. previous month</div>
+                                        <div
+                                            class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
+                                            vs. previous month</div>
                                     </div>
                                 </div>
 
@@ -199,15 +216,22 @@
                                         <img src="src/Assets/Group 3 (1).svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">Average Sales</p>
-                                        <p class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">1567</p>
+                                        <p
+                                            class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
+                                            Average Sales</p>
+                                        <p
+                                            class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
+                                            1567</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-4">
-                                        <div class="flex bg-[#fce8e9] px-2 py-1 gap-1 rounded-full overflow-hidden items-center justify-center"><img
-                                                src="src/Assets/trending-up (1).svg" alt="">
+                                        <div
+                                            class="flex bg-[#fce8e9] px-2 py-1 gap-1 rounded-full overflow-hidden items-center justify-center">
+                                            <img src="src/Assets/trending-up (1).svg" alt="">
                                             <p class="text-[#ED544E] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">vs. previous month</div>
+                                        <div
+                                            class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
+                                            vs. previous month</div>
                                     </div>
                                 </div>
 
@@ -219,15 +243,22 @@
                                         <img src="src/Assets/Group 3.svg" alt="">
                                     </div>
                                     <div class="my-2">
-                                        <p class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">Total Income</p>
-                                        <p class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">$350.000</p>
+                                        <p
+                                            class="font-medium text-[#898989] lg:text-[18px] text-[15px] dark:text-[#B7B0B0]">
+                                            Total Income</p>
+                                        <p
+                                            class="text-[#3A3F51] font-semibold lg:text-[24px] text-[20px] dark:text-[#B7B0B0]">
+                                            $350.000</p>
                                     </div>
                                     <div class="flex items-center justify-between gap-4">
-                                        <div class="flex bg-[#cff2e9] py-1 gap-1 rounded-full overflow-hidden items-center justify-center px-2"><img
-                                                src="src/Assets/trending-up.svg" alt="">
+                                        <div
+                                            class="flex bg-[#cff2e9] py-1 gap-1 rounded-full overflow-hidden items-center justify-center px-2">
+                                            <img src="src/Assets/trending-up.svg" alt="">
                                             <p class="text-[#34CAA5] font-medium text-[9px]">23.5%</p>
                                         </div>
-                                        <div class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">vs. previous month</div>
+                                        <div
+                                            class="text-[#606060] font-normal lg:text-[15px] text-[12px] dark:text-[#B7B0B0]">
+                                            vs. previous month</div>
                                     </div>
                                 </div>
 
@@ -236,11 +267,13 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row">
+                <div class="flex flex-col items-center lg:flex-row">
                     <!-- Last orders -->
-                    <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] overflow-y-scroll lg:w-[60%] p-4 h-[340px]">
+                    <div
+                        class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] overflow-y-scroll lg:w-[60%] p-4 lg:h-[340px] h-[300px]">
                         <div class="flex items-center justify-between">
-                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#B7B0B0]">Last Orders</div>
+                            <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#B7B0B0]">
+                                Last Orders</div>
                             <button class="text-[#34CAA5] text-[16px] font-medium cursor-pointer">
                                 <!-- See All -->
                             </button>
@@ -475,9 +508,11 @@
                     <!-- Top platform -->
                     <div class="m-4 bg-white dark:bg-gray-800 rounded-xl w-[90%] lg:w-[40%] p-3">
                         <div class="flex items-center justify-between p-2 ">
-                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">Top Platform</div>
-                            <button class="text-[#34CAA5] lg:text-[16px] text-[13px] font-medium cursor-pointer p-3 outline-none" onclick="seeAll()"
-                                id="seeAll">
+                            <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">Top
+                                Platform</div>
+                            <button
+                                class="text-[#34CAA5] lg:text-[16px] text-[13px] font-medium cursor-pointer p-3 outline-none"
+                                onclick="seeAll()" id="seeAll">
                                 See All
                             </button>
                         </div>
@@ -563,141 +598,214 @@
                                     aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
-                            
-                        </div>    
 
-                            <div id="more" class="hidden">
-                                <!-- 4 -->
-                                <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                        xStore
-                                    </div>
+                        </div>
 
-                                    <div>
-                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                            <div class="bg-[#FF4A55] w-[30%] h-[6px] rounded-full" role="progressbar"
-                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <div>
-                                                $2,000,000
-                                            </div>
-                                            <div>
-                                                +10%
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div id="more" class="hidden">
+                            <!-- 4 -->
+                            <div class="px-2 mb-2">
+                                <div
+                                    class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                    xStore
                                 </div>
 
-                                <!-- 5 -->
-                                <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                        Tems Clothier
-                                    </div>
-
-                                    <div>
-                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                            <div class="bg-[#6160DC] w-[50%] h-[6px] rounded-full" role="progressbar"
-                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <div>
-                                                $2,500,000
-                                            </div>
-                                            <div>
-                                                +15%
-                                            </div>
+                                <div>
+                                    <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                        <div class="bg-[#FF4A55] w-[30%] h-[6px] rounded-full" role="progressbar"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                         </div>
                                     </div>
-                                </div>
-
-                                <!-- 6 -->
-                                <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                        shoprite mart
-                                    </div>
-
-                                    <div>
-                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                            <div class="bg-[#FF4A55] w-[40%] h-[6px] rounded-full" role="progressbar"
-                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            $2,000,000
                                         </div>
-                                        <div class="flex items-center justify-between">
-                                            <div>
-                                                $1,500,000
-                                            </div>
-                                            <div>
-                                                +12%
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 7 -->
-                                <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                        Spar supermart
-                                    </div>
-
-                                    <div>
-                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                            <div class="bg-[#54C5EB] w-[60%] h-[6px] rounded-full" role="progressbar"
-                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <div>
-                                                $1,400,000
-                                            </div>
-                                            <div>
-                                                +13%
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 8 -->
-                                <div class="px-2 mb-2">
-                                    <div class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
-                                        Greg's groceries
-                                    </div>
-
-                                    <div>
-                                        <div class="my-2 border rounded-full bg-[#EBECF2]">
-                                            <div class="bg-[#FFB74A] w-[50%] h-[6px] rounded-full" role="progressbar"
-                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <div>
-                                                $2,500,000
-                                            </div>
-                                            <div>
-                                                +15%
-                                            </div>
+                                        <div>
+                                            +10%
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                        
+                            <!-- 5 -->
+                            <div class="px-2 mb-2">
+                                <div
+                                    class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                    Tems Clothier
+                                </div>
+
+                                <div>
+                                    <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                        <div class="bg-[#6160DC] w-[50%] h-[6px] rounded-full" role="progressbar"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            $2,500,000
+                                        </div>
+                                        <div>
+                                            +15%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 6 -->
+                            <div class="px-2 mb-2">
+                                <div
+                                    class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                    shoprite mart
+                                </div>
+
+                                <div>
+                                    <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                        <div class="bg-[#FF4A55] w-[40%] h-[6px] rounded-full" role="progressbar"
+                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            $1,500,000
+                                        </div>
+                                        <div>
+                                            +12%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 7 -->
+                            <div class="px-2 mb-2">
+                                <div
+                                    class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                    Spar supermart
+                                </div>
+
+                                <div>
+                                    <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                        <div class="bg-[#54C5EB] w-[60%] h-[6px] rounded-full" role="progressbar"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            $1,400,000
+                                        </div>
+                                        <div>
+                                            +13%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 8 -->
+                            <div class="px-2 mb-2">
+                                <div
+                                    class="text-[#26282C] dark:text-[#B7B0B0] font-semibold lg:text-[18px] text-[14px]">
+                                    Greg's groceries
+                                </div>
+
+                                <div>
+                                    <div class="my-2 border rounded-full bg-[#EBECF2]">
+                                        <div class="bg-[#FFB74A] w-[50%] h-[6px] rounded-full" role="progressbar"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            $2,500,000
+                                        </div>
+                                        <div>
+                                            +15%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                     </div>
                 </div>
                 <!-- End Main content -->
             </div>
 
-
+            <nav class=" bg-[#FFFFFF] dark:bg-gray-700 lg:hidden ">
+                <div
+                    class="bg-[#F7F8FA] dark:bg-gray-700 w-screen flex items-center justify-center flex-row gap-28 p-4 border-[#EBECF2] dark:border-gray-700 border-t">
+                    <!-- upper side icon group -->
+                    <div class="flex items-center justify-center gap-5 px-3">
+                        <img src="src/Assets/Vector.svg" alt="side icon"
+                            class="w-6 h-6 cursor-pointer hover:scale-125 hover:transition hover:duration-200"></a>
+                        <div id="sideIcons" class="flex items-center justify-center gap-5">
+                            <a href="#" class="relative flex items-center justify-center" id="navIcon">
+                                <img src="src/Assets/category.svg" alt="side icon"
+                                    class="w-6 h-6 hover:scale-125 hover:transition hover:duration-200 min-w-5 min-h-5">
+                                <div class="h-[3px] w-[21px] bg-[#0D062D] rounded-b-2xl absolute top-[-28px]"></div>
+                            </a>
+    
+                            <a href="#">
+                                <img src="src/Assets/trend-up.svg" alt="side icon"
+                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                            </a>
+                            <a href="#">
+                                <img src="src/Assets/profile-2user.svg" alt="side icon"
+                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                            </a>
+                            <a href="#">
+                                <img src="src/Assets/box.svg" alt="side icon"
+                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                            </a>
+                            <a href="#">
+                                <img src="src/Assets/discount-shape.svg" alt="side icon"
+                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                            </a>
+                            <a href="#">
+                                <img src="src/Assets/info-circle.svg" alt="side icon"
+                                    class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200">
+                            </a>
+                        </div>
+    
+                        <!-- Dark mode -->
+                        <div class="flex flex-col justify-center gap-2 p-2 bg-white rounded-full dark:bg-gray-500">
+                            <button class="bg-[#34CAA5] rounded-full w-[30px] h-[30px] flex items-center justify-center"
+                                id="dark-toggle-sm">
+                                <img src="src/Assets/brightness 1.svg" alt="brightness icon" class="w-[15px] h-[15px]">
+                            </button>
+                            <!-- <button class="rounded-full w-[30px] h-[30px] flex items-center justify-center" id="light-toggle">
+                                <img src="src/Assets/moon 1.svg" alt="brightness icon" class="w-[17px] h-[17px]">
+                            </button> -->
+                        </div>
+                    </div>
+    
+                    <!-- lower side icon group -->
+                    <!-- <div class="flex gap-[16px] justify-center items-center cursor-pointer">
+                        <a href="#">
+                            <img src="src/Assets/arrow-right.svg" alt="side icon"
+                                class="w-6 h-6 min-w-5 min-h-5 hover:scale-125 hover:transition hover:duration-200 ">
+                        </a>
+                        <a href="#">
+                            <img src="src/Assets/setting-2.svg" alt="side icon"
+                                class="w-6 h-6 min-w-5 min-h-5 hover:scale-125 hover:transition hover:duration-200 ">
+                        </a>
+                        <a href="#">
+                            <img src="src/Assets/logout.svg" alt="side icon"
+                                class="w-6 h-6 hover:scale-125 min-w-5 min-h-5 hover:transition hover:duration-200 ">
+                        </a>
+                    </div> -->
+    
+                </div>
+            </nav>
         </div>
 
-        <!-- Chart JS -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+    </div>
 
-        <!-- JS -->
-        <script src="src/js/script.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS -->
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
