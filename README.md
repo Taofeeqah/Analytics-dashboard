@@ -4,8 +4,19 @@ Your task is to craft a responsive and visually appealing analytics dashboard, a
 
 ![Screenshot (611)](https://github.com/Taofeeqah/Analytics-dashboard/assets/45803442/3631f49b-54dd-47a7-b328-e260768024bc)
 
-##Technologies Used
+Here is the Figma link: [Analytics Dashboard](https://www.figma.com/file/IvIZCBKMfmY3Qty0Gqx6S8/Analytics-Dashboard?type=design&node-id=1%3A3&mode=design&t=BJeq5TMSwzAaqlz0-1)
+
+## Technologies Used
 * HTML
 * CSS
-1 JavaScript
-1 Chart.js
+* JavaScript
+* Chart.js
+
+## Features
+* Responsive design for various screen sizes.
+* Interactive charts for better data exploration.
+* Clearly organized structure for easy customization and maintenance.
+
+## Courtesy
+* Geegpay
+* Davey Herbert
