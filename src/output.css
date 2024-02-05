@@ -548,15 +548,15 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 500px) {
   .container {
-    max-width: 640px;
+    max-width: 500px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 768px;
+    max-width: 640px;
   }
 }
 
@@ -723,6 +723,10 @@ video {
 
 .clear-none {
   clear: none;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .m-4 {
@@ -947,10 +951,6 @@ video {
   min-height: 1.25rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1039,28 +1039,16 @@ video {
   width: 100vw;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[600px\] {
-  width: 600px;
-}
-
-.w-\[full\] {
-  width: full;
-}
-
-.w-\[7\] {
-  width: 7;
-}
-
-.w-\[750px\] {
-  width: 750px;
+.w-1\/2 {
+  width: 50%;
 }
 
 .min-w-5 {
   min-width: 1.25rem;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
 }
 
 .min-w-full {
@@ -2997,20 +2985,20 @@ input::-webkit-search-cancel-button {
   filter: invert(0.5);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 500px) {
   .sm\:container {
     width: 100%;
+  }
+
+  @media (min-width: 500px) {
+    .sm\:container {
+      max-width: 500px;
+    }
   }
 
   @media (min-width: 640px) {
     .sm\:container {
       max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .sm\:container {
-      max-width: 768px;
     }
   }
 
@@ -3112,7 +3100,7 @@ input::-webkit-search-cancel-button {
   color: rgb(247 248 250 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
+@media (min-width: 500px) {
   .sm\:table-cell {
     display: table-cell;
   }
@@ -3134,9 +3122,13 @@ input::-webkit-search-cancel-button {
   }
 }
 
-@media (min-width: 768px) {
-  .md\:w-full {
-    width: 100%;
+@media (min-width: 640px) {
+  .md\:w-\[1\/2\] {
+    width: 1/2;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:pl-0 {
@@ -3166,6 +3158,10 @@ input::-webkit-search-cancel-button {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -3174,8 +3170,20 @@ input::-webkit-search-cancel-button {
     height: 340px;
   }
 
+  .lg\:h-\[360px\] {
+    height: 360px;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
   .lg\:max-h-\[350px\] {
     max-height: 350px;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
   }
 
   .lg\:w-\[40\%\] {
@@ -3188,6 +3196,11 @@ input::-webkit-search-cancel-button {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-max {
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .lg\:flex-row {

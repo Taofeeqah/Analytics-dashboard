@@ -11,8 +11,8 @@
 
 </head>
 
-<body class="bg-[#F7F8FA] dark:bg-gray-700 dark:text-[#F7F8FA] h-screen">
-    <div class="flex">
+<body class="bg-[#F7F8FA] dark:bg-gray-700 dark:text-[#F7F8FA] h-screen overflow-x-hidden">
+    <div class="lg:flex">
         <!-- Side nav -->
         <nav class="h-full bg-[#FFFFFF] hidden dark:bg-gray-700 lg:block">
             <div
@@ -157,7 +157,7 @@
 
         <!-- Main content -->
 
-        <div class="flex flex-col gap-3 my-4 lg:my-[2px]">
+        <div class="flex flex-col gap-3 my-4 lg:my-[2px] w-screen lg:w-[100%]">
 
             <!-- header for sm -->
             <div class="w-screen px-2 lg:hidden">
@@ -328,7 +328,7 @@
 
                         </div>
 
-                        <div class="flex w-full gap-4">
+                        <div class="flex w-full gap-2 lg:gap-3">
 
                             <!-- Box 3 -->
                             <div class="flex-1 w-1/2 p-2 bg-white dark:bg-gray-800 rounded-xl">
@@ -392,7 +392,7 @@
             <div class="flex flex-col items-center lg:items-start lg:flex-row">
                 <!-- Last orders -->
                 <div
-                    class="m-4 bg-white dark:bg-gray-800 rounded-xl overflow-x-scroll overflow-y-scroll w-[90%] lg:w-[60%] p-4 lg:h-[340px] h-[300px]">
+                class="m-4 bg-white dark:bg-gray-800 rounded-xl overflow-x-scroll overflow-y-scroll w-[90%] lg:w-[60%] p-4 lg:h-[340px] h-[300px]">
                     <div class="flex items-center justify-between">
                         <div class="text-[#26282C] font-semibold lg:text-[18px] text-[14px] dark:text-[#B7B0B0]">
                             Last Orders</div>
@@ -400,8 +400,8 @@
                             <!-- See All -->
                         </button>
                     </div>
-                    <div class="">
-                        <table class="w-full p-2 text-left lg:w-full">
+                    <div class="min-w-[500px] overflow-x-scroll">
+                        <table class="w-full p-2 text-left ">
                             <tr class="text-[#9CA4AB] lg:text-[15px] text-[11px] w-full font-light h-5">
                                 <td>Name</td>
                                 <td class="py-2">Date</td>
@@ -870,9 +870,9 @@
             
 
         <!-- Bottom nav for mobile -->
-        <nav class=" bg-[#FFFFFF] dark:bg-gray-700 lg:hidden fixed bottom-0">
+        <nav class=" bg-[#FFFFFF] dark:bg-gray-700 lg:hidden fixed bottom-0 w-screen">
             <div
-                class="bg-[#F7F8FA] dark:bg-gray-700 w-screen flex items-center justify-center flex-row gap-28 p-4 border-[#EBECF2] dark:border-gray-700 border-t">
+                class="bg-[#F7F8FA] dark:bg-gray-700 flex items-center justify-center flex-row gap-28 p-4 border-[#EBECF2] dark:border-gray-700 border-t">
                 <!-- upper side icon group -->
                 <div class="flex items-center justify-center gap-5 px-3">
                     <img src="src/Assets/Vector.svg" alt="side icon"
