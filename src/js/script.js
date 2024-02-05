@@ -104,8 +104,16 @@ function toggleBtn() {
   toggleMenu.classList.toggle("hidden");
 }
 
+function closeBtn() {
+  toggleMenu.classList.toggle("hidden");
+}
+
 const toggleMenuSm = document.querySelector('#optionsSm')
 function toggleBtnSm() {
+  toggleMenuSm.classList.toggle("hidden");
+}
+
+function closeBtnSm() {
   toggleMenuSm.classList.toggle("hidden");
 }
 
@@ -114,8 +122,16 @@ function showNotif() {
   toggleBell.classList.toggle("hidden");
 }
 
+function closeNotif() {
+  toggleBell.classList.toggle("hidden");
+}
+
 const toggleBellSm = document.querySelector('#options-bellSm')
 function showNotifSm() {
+  toggleBellSm.classList.toggle("hidden");
+}
+
+function closeNotifSm() {
   toggleBellSm.classList.toggle("hidden");
 }
 

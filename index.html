@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/Assets/Vector.svg" type="image/x-icon">
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <title>Analytics dashboard</title>
 
@@ -111,8 +112,9 @@
 
                         <div class="absolute bg-white dark:bg-gray-700 w-[190px] mt-3 hidden p-1 shadow-lg rounded-lg cursor-pointer"
                             id="options-bell">
-                            <div class="p-2 border-b">
+                            <div class="relative p-2 border-b">
                                 <b>Notification</b>
+                                <img src="src/Assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="close" class="w-[15px] h-[15px] absolute top-[14px] right-2 cursor-pointer" onclick="closeNotif()">
                             </div>
 
                             <div class="p-2">
@@ -135,17 +137,22 @@
 
 
                         </div>
-                        <div class="absolute bg-white dark:bg-gray-700 w-[150px] p-1 shadow-lg rounded-lg hidden cursor-pointer mt-2"
+                        <div class="absolute bg-white dark:bg-gray-700 w-[150px] p-1 shadow-lg rounded-lg hidden mt-2"
                             id="options">
-                            <div class="p-2 border-b">
-                                Signed in as <b>Justin Bergson</b>
+                            <div class="relative p-2 border-b">
+                                <p>Signed in as <b>Justin Bergson</b></p>
+                                <img src="src/Assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="close" class="w-[15px] h-[15px] absolute top-[14px] right-2 cursor-pointer" onclick="closeBtn()">
                             </div>
 
-                            <div class="p-2">
-                                <p>Your Profile</p>
-                                <p>Help</p>
-                                <p>Settings</p>
+                            <div class="">
+                                <a href="#"><p class="p-2 hover:bg-gray-300">Your Profile</p></a>
+                                <a href="#"><p class="p-2 hover:bg-gray-300">Help</p></a>
+                                <a href="#"><p class="p-2 hover:bg-gray-300">Settings</p></a>
                             </div>
+
+                            <!-- <div class="inline p-2 mb-2 border">
+                                Dismiss
+                            </div> -->
                         </div>
 
 
@@ -184,8 +191,9 @@
                         </div>
                             <div class="absolute bg-white dark:bg-gray-700 w-[150px] hidden p-1 shadow-lg rounded-lg  cursor-pointer mt-2"
                                 id="optionsSm">
-                                <div class="p-2 border-b text-[12px]">
+                                <div class="p-2 border-b text-[12px] relative">
                                     Signed in as <b>Justin Bergson</b>
+                                    <img src="src/Assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="close" class="w-[15px] h-[15px] absolute top-[14px] right-2 cursor-pointer" onclick="closeBtnSm()">
                                 </div>
     
                                 <div class="p-2 text-[12px]">
@@ -228,8 +236,9 @@
     
                             <div class="absolute bg-white dark:bg-gray-700 w-[190px] mt-3 p-1 shadow-lg rounded-lg cursor-pointer hidden right-4"
                                 id="options-bellSm">
-                                <div class="p-2 border-b text-[12px]">
+                                <div class="p-2 border-b text-[12px] relative">
                                     <b>Notification</b>
+                                    <img src="src/Assets/close_FILL0_wght400_GRAD0_opsz24.svg" alt="close" class="w-[15px] h-[15px] absolute top-[11px] right-2 cursor-pointer" onclick="closeNotifSm()">
                                 </div>
     
                                 <div class="p-2 text-[12px]">

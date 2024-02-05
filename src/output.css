@@ -673,6 +673,26 @@ video {
   top: -28px;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[11px\] {
+  top: 11px;
+}
+
+.top-\[14px\] {
+  top: 14px;
+}
+
+.top-\[12px\] {
+  top: 12px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -723,10 +743,6 @@ video {
 
 .clear-none {
   clear: none;
-}
-
-.m-2 {
-  margin: 0.5rem;
 }
 
 .m-4 {
@@ -947,8 +963,20 @@ video {
   height: 100vh;
 }
 
+.h-\[12px\] {
+  height: 12px;
+}
+
+.h-\[8px\] {
+  height: 8px;
+}
+
 .min-h-5 {
   min-height: 1.25rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-10 {
@@ -1039,8 +1067,20 @@ video {
   width: 100vw;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[12px\] {
+  width: 12px;
+}
+
+.w-\[8px\] {
+  width: 8px;
 }
 
 .min-w-5 {
@@ -3027,6 +3067,11 @@ input::-webkit-search-cancel-button {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:bg-gray-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3123,14 +3168,6 @@ input::-webkit-search-cancel-button {
 }
 
 @media (min-width: 640px) {
-  .md\:w-\[1\/2\] {
-    width: 1/2;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
   .md\:pl-0 {
     padding-left: 0px;
   }
@@ -3170,14 +3207,6 @@ input::-webkit-search-cancel-button {
     height: 340px;
   }
 
-  .lg\:h-\[360px\] {
-    height: 360px;
-  }
-
-  .lg\:h-full {
-    height: 100%;
-  }
-
   .lg\:max-h-\[350px\] {
     max-height: 350px;
   }
@@ -3196,11 +3225,6 @@ input::-webkit-search-cancel-button {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-max {
-    width: -moz-max-content;
-    width: max-content;
   }
 
   .lg\:flex-row {
