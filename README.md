@@ -8,7 +8,7 @@ Here is the Figma link: [Analytics Dashboard](https://www.figma.com/file/IvIZCBK
 
 ## Technologies Used
 * HTML
-* CSS
+* TailwindCSS
 * JavaScript
 * Chart.js
 
